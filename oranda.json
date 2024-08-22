@@ -1,10 +1,15 @@
 {
-    "project": {
-        "name" : "PLX"
-    },    
-    "components": {
-      "mdbook": {
-        "path": "./docs"
-      }
-    }  
+  "project": {
+    "name": "PLX"
+  },
+  "components": {
+    "mdbook": {
+      "path": "./docs"
+    }
+  },
+  "styles": {
+    "additional_css": [
+      "extra.css"
+    ]
+  }
 }

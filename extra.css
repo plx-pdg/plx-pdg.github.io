@@ -1,0 +1,20 @@
+/* Extra css to customize the look above the settings of the default Oranda theme. */
+h1, h2, h3, h4, h5, h6 {
+  /* TODO: fix gradient color with logo colors*/
+		background: linear-gradient(to right, #1abadb 0%, #18e258 100%);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+}
+
+p, ul, ol, blockquote, code, pre {
+  font-size: 1.5rem;
+}
+
+li {
+  font-size: 1.5rem;
+  list-style: disc;
+}
+
+footer {
+  display: none;
+}
