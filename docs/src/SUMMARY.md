@@ -1,3 +1,5 @@
 # Summary
 
-- [Chapter 1](./chapter_1.md)
+- [Installation](./install.md)
+- [Report](./report.md)
+- [Technical documentation](./docs.md)
