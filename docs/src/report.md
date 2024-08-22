@@ -55,22 +55,26 @@ todo: document release process
 todo: document other OS
 
 ## Mockups
+### Home page
 For running PLX, the user need to choose the folder that contains the exercises if there is not ".plxproject" file in the given top-level folder the app provides a warning messages. The app will ask again for a folder.
 
 ![home.opti.svg](img/svg/home.opti.svg)
-
-Arrows on the picture are to illustrate event. This is the home layout of the app PLX. There are three options on this page. First, press "r" to access the last exercise working on that still needs to be finished. When PLX start an exercise, it will run automatically the IDE with the correct file. Secondly, press "l" to access the listing of exercises and lastly press "?" for showing the command of the app.
+Arrows on the picture are to illustrate the event. This is the home layout of the app PLX. There are three options on this page. First, press "r" to access the last exercise work that still needs to be finished. When PLX starts an exercise, it will automatically run the IDE with the correct file and compile the file for the first time. Secondly, press "l" to access the listing of exercises, and lastly press "?" to show the command of the app.
+### List page
 
 ![list-1.opti.svg](img/svg/list-1.opti.svg)
 
-On the list view, there are two columns the left one for the subject that is fixed and on right side for the exercises that change instead of the choosing subject.
+On the list view, there are two columns the left one for the subject that is fixed and the right side for the exercises that change instead of the chosen subject. Press "ENTER" to go inside the subject and access the list of exercises and "ESC" to go back.
 
 ![list-2.opti.svg](img/svg/list-2.opti.svg)
-
+The code colour of exercises is green = done, orange = one test pass, and default colour = otherwise. To navigate in the list, use caps "k" for going up and "j" for going down.
 ![preview-exo.opti.svg](img/svg/preview-exo.opti.svg)
-![error.opti.svg](img/svg/error.opti.svg)
+Press "ENTER" to go to the exercise preview and "ESC" to go back to the exercise list. The preview exercise gives the explanation and the path.
+### Exercise page
 ![exo-1.opti.svg](img/svg/exo-1.opti.svg)
+The practising validity tests or points that are red when they are not done and green otherwise. To navigate and see details of the validity points use "CTRL + u" up and "CTRL + d" down.
 ![exo-2.opti.svg](img/svg/exo-2.opti.svg)
+![error.opti.svg](img/svg/error.opti.svg)
 
 ## Landing page
 todo

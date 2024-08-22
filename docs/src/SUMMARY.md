@@ -1,5 +1,5 @@
 # Summary
 
 - [Installation](./install.md)
-- [Report](./report.md)
+- [Report](Report.md)
 - [Technical documentation](./docs.md)
