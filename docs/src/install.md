@@ -5,6 +5,10 @@
 1. Install the Rust toolchain via `rustup` on [rustup.rs](https://rustup.rs/), so you have the package manager cargo and the necessary tools to compile plx from the `crates.io` package.
 1. Install xmake (at least > 2.9.4) on [xmake.io](https://xmake.io/#/guide/installation). xmake is used to build C and C++ exos in the background but you don't need to learn how it works :)
 
+If you are programming in
+1. C or C++: standard build tools for C/C++, used by Xmake
+1. Java: make sure to have a JDK installed (with `java` and `javac`)
+
 For teachers only
 1. Configure `$EDITOR` environment variable. When pressing `e` (like edit) on an exo, the definition file will be opened in this editor.
   1. You can choose any command line editor like `vim`, `nvim` or a GUI IDE also works `code`, `codium`, `idea`, as a replacement of `<ide>` below.
