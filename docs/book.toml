@@ -1,0 +1,6 @@
+[book]
+title = "PLX documentation"
+description = "The documentation includes how to install, use and develop PLX."
+
+[output.html]
+additional-css = ["book.css"]

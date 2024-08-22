@@ -1,0 +1,20 @@
+
+/* Increase maximum width of content so images can be displayed a bit bigger */
+.content main {
+  max-width: 1000px;
+
+  /*Make margins much slower but leave some space*/
+  h1 {
+    margin: 30px 0;
+  }
+  h2 {
+    margin: 20px 0;
+  }
+  h3, h4 {
+    margin: 10px 0;
+  }
+  p {
+    margin: 5px 0;
+  }
+}
+
