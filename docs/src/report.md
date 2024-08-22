@@ -1,8 +1,6 @@
 ## Project description
 TODO: functionnal and non fonctionnal goals
 
-> **P**ractice programming exos in a delightful **L**earning e**X**perience
-
 ## Architecture
 TODO: small schema
 TODO: small description
@@ -49,8 +47,7 @@ todo: why xmake
 todo: exos structure and files
 
 ## Project management
-todo
-
+### GitHub workflow
 1. We protect the main branch on the main repository to avoid pushing commits directly without any review. The 2 others repository (website + organisation profile) are not protected for ease of change.
 1. For each feature or change:
   1. we create a new issue and assign it to the correct person
@@ -60,6 +57,21 @@ todo
   1. The PR is automatically merged only after one review, and trivial changes that do not review can be merged by the PR creator.
   1. Github is configured to block merging if CI jobs are failing.
   1. We try to delete the branch when PR is merged.
+
+### Communication
+1. We have a Telegram group to have group calls, discuss and ask for reviews
 1. We do 2 small coordination meetings starting between 9:30 and 10:00, and another one around 15:00.
 
+### Versionning
+We follow semver (Semantic Versionning), see the specification on [semver.org](semver.org). All versions under `1.0.0` are not to be considered stable, breaking changes can appear in the CLI arguments, keyboard shortcuts, file structure, exo syntax, ... internal Rust code is not exposed externally as it is not a library, so we don't have to consider major changes in the code.
 
+### Changelog
+We follow the [Keep a Changelog](https://keepachangelog.com) convention, we write users oriented changelog at each release to describe changes in a more accessible way that git log outputs between releases.
+
+### Commits
+We try to follow the [Conventionnal commits](conventionnalcommits.com).
+
+todo: check the 3 above links I wrote them by the top of my head...
+
+### Testing
+TODO
