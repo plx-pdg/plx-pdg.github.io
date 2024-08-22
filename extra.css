@@ -6,12 +6,11 @@ h1, h2, h3, h4, h5, h6 {
 		-webkit-text-fill-color: transparent;
 }
 
-p, ul, ol, blockquote, code, pre {
-  font-size: 1.5rem;
+p, li, ul, ol, blockquote, code, pre {
+  font-size: 1.3rem;
 }
 
 li {
-  font-size: 1.5rem;
   list-style: disc;
 }
 
@@ -22,3 +21,27 @@ nav li {
 footer {
   display: none;
 }
+
+
+main {
+  /*Make margins much slower but leave some space*/
+  h1 {
+    margin: 30px 0;
+    margin-top: 50px;
+  }
+  h2 {
+    margin: 20px 0;
+    margin-top: 40px;
+  }
+  h3, h4 {
+    margin: 10px 0;
+    margin-top: 30px;
+  }
+  p, blockquote {
+    margin: 8px 0;
+  }
+  img {
+    margin: 15px 0 !important;
+  }
+}
+

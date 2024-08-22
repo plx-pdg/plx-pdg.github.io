@@ -1,12 +1,9 @@
 # Why ?
 
-> *The age of features is over, we are living in the age of experiences.*  
-> Aral Balkan, [dans une conférence sur l'UX intitulée "Superheroes & Villains in Design"](https://small-tech.org/videos/ux-talk/).
-
-Au lieu de faire un projet juste pour "passer PDG", investissons ces 3 semaines à développer quelque chose qui peut avoir un fort impact sur l'expérience d'apprentissage à la HEIG-VD sur le long terme ! Si le projet atteint un état assez fonctionnel, il pourra déjà être utilisé 2 semaines plus tard à la rentrée sur des exercices de PRG1, PCO et SYE!
+**TODO: translate this to English ?** 
 
 > *The age of features is over, we are living in the age of experiences.*  
-> Aral Balkan, [dans une conférence sur l'UX intitulée "Superheroes & Villains in Design"](https://small-tech.org/videos/ux-talk/).
+> Aral Balkan, [during a UX conference titled "Superheroes & Villains in Design"](https://small-tech.org/videos/ux-talk/).
 
 Ce n'est pas juste un projet stylé parce que le Rust c'est hype, qu'il y a un mode watch super réactif, un feedback riche... **on développe une nouvelle expérience d'apprentissage pour s'approcher de la pratique délibérée en informatique !!**
 
