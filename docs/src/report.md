@@ -33,10 +33,11 @@ The code colour of exercises is green = done, orange = one test pass, and defaul
 Press "ENTER" to go to the exercise preview and "ESC" to go back to the exercise list. The preview exercise gives the explanation and the path.
 ### Exercise page
 ![exo-1.opti.svg](img/svg/exo-1.opti.svg)
-The practising validity tests or points that are red when they are not done and green otherwise. To navigate and see details of the validity points use "CTRL + u" up and "CTRL + d" down.
+The practising validity tests or points that are red when they are not done and green otherwise. To navigate and see details of the validity points use "CTRL + u" up and "CTRL + d" down. When user save exercise file on the IDE, PLX will automatically update the status of the validity test or points.
 ![exo-2.opti.svg](img/svg/exo-2.opti.svg)
+When the exercise is done all validity points that are green, the user have the options press "s" to see the solution. Scrolling inside the solution is with caps "k"(up) and "j"(down).
 ![error.opti.svg](img/svg/error.opti.svg)
-
+This is an example of report error of compilation if the user save the file and there is a issue to compile the code.
 ## Landing page
 todo
 
