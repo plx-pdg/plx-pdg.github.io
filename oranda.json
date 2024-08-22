@@ -1,5 +1,10 @@
 {
     "project": {
         "name" : "PLX"
-    }
+    },    
+    "components": {
+      "mdbook": {
+        "path": "./docs"
+      }
+    }  
 }
