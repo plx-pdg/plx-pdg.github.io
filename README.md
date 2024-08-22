@@ -1,26 +1,31 @@
-Welcome to the PLX project !
+<div class="oranda-hide">
 
-### What is PLX ?
+  **We recommend to read this page with nice preview on the deployed version.**
 
-Practice programming exos in delightful Learning eXperience
+</div>
 
-parler du pourquoi 
+<!--todo: include logo here -->
 
-### Getting started
+### Practice programming exos in delightful Learning eXperience
 
-#### Installing Cargo
+**The traditionnal way of practicing with programming exercises is full of friction making the whole process a painful experience!**
 
-- commande(s) d'installation cargo
+<!-- If you are a student:
+# 1. Are you tired of entering values in the terminal manually to fill the requested values ?
+# 1. Are you tired of finding errors in your code days later in your labs or in your exo code because there is no automated test and you didn't test it manually for the edge cases ?
+#
+# Instead of spending mental time on taking care of boilerplate code creation, compilation, execution, output comparison, solution comparison, ... What if **deliberate practice** could inspire a much faster feedback loop and increase the focus on writing code by automating all the steps around ?
+-->
 
+## The current experience
+todo: schema
 
-#### Installing Rust
+## The PLX experience
+todo: schema
 
-- commande(s) installation Rust
+## For teachers
+If you are managing a course in C, C++ or Java, PLX can help you maintain your exercises and easily add automated checks to verify the common and edge cases.
 
-#### Installing PLX
+## Course maintenance
 
-- commande(s) installation PLX 
-- Utilisation de PLX ou sous chapitre comment utiliser ??
-
-
-
+todo: small preview of course management solution.

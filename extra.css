@@ -15,6 +15,10 @@ li {
   list-style: disc;
 }
 
+nav li {
+  font-size: 1.5rem;
+  list-style: none;
+}
 footer {
   display: none;
 }
