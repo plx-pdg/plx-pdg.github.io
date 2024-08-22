@@ -56,16 +56,21 @@ todo: document other OS
 
 ## Mockups
 For running PLX, the user need to choose the folder that contains the exercises if there is not ".plxproject" file in the given top-level folder the app provides a warning messages. The app will ask again for a folder.
-![[home.opti.svg]]
+
+![home.opti.svg](img/svg/home.opti.svg)
+
 Arrows on the picture are to illustrate event. This is the home layout of the app PLX. There are three options on this page. First, press "r" to access the last exercise working on that still needs to be finished. When PLX start an exercise, it will run automatically the IDE with the correct file. Secondly, press "l" to access the listing of exercises and lastly press "?" for showing the command of the app.
 
-![[list-1.opti.svg]]
+![list-1.opti.svg](img/svg/list-1.opti.svg)
+
 On the list view, there are two columns the left one for the subject that is fixed and on right side for the exercises that change instead of the choosing subject.
-[list-2.opti.svg](imgs/list-2.opti.svg)
-[preview-exo.opti.svg](imgs/preview-exo.opti.svg)
-[error.opti.svg](imgs/error.opti.svg)
-[exo-1.opti.svg](imgs/exo-1.opti.svg)
-[exo-2.opti.svg](imgs/exo-2.opti.svg)
+
+![list-2.opti.svg](img/svg/list-2.opti.svg)
+
+![preview-exo.opti.svg](img/svg/preview-exo.opti.svg)
+![error.opti.svg](img/svg/error.opti.svg)
+![exo-1.opti.svg](img/svg/exo-1.opti.svg)
+![exo-2.opti.svg](img/svg/exo-2.opti.svg)
 
 ## Landing page
 todo
