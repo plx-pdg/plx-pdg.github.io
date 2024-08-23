@@ -52,18 +52,22 @@ When all checks are green the exo is done, the user has the options to press "s"
 
 This is an example of report error of compilation if the user save the file and there is a issue to compile the code.
 
-### Case study without PLX
+
+### Case study with the PLX experience
+
+### Case study with the classic experience
 Let's consider a typical exercise: 
 
 ![instruction](img/png/example-exo.png)
 
-To solve this exercise, we first read the instructions, then open an IDE, manually create a `main.c` file, copy-paste the starter code, read the existing code, and complete the parts that need to be developed. Once we believe the code is ready, we compile it by opening a terminal in the IDE and typing `gcc dog main.c`—oops, it should have been `gcc -o dog main.c`
+To solve this exercise, we first read the instruction, then open an IDE, manually create a `main.c` file, copy-paste the starter code, read the existing code, and complete the parts that need to be developed. Once we believe the code is ready, we compile it by opening a terminal in the IDE and typing `gcc dog main.c` — oops! it should have been `gcc -o dog main.c`
 
 ![compile error](img/png/error-cmd-compile.png)
 
-We then input the name and number of legs, and compare the output manually to see if it matches the expected result. Opening the instructions again, we realize that the number of legs display is missing! We go back to the code, add the age variable, recompile, and re-run the program, entering the name and number of legs once more. This time, is the output correct? Now we check our code against the solution. Okay, we could have used `printf` instead of `puts()` twice to display the full name. Moving on to the next exercise, we search for the instructions, and the cycle repeats...
+After this, we input the name and number of legs, and compare the output manually to see if it matches the expected result. Opening the instruction again, we realize that the number of legs has not displayed ! We go back to the code, add the age variable, recompile, and run the program again, entering the name and number of legs once more. This time, is the output correct? Now we check our code against the solution... Okay, we could have used `printf` instead of `puts()` twice to display the full name. Moving on to the next exercise, we search for the instruction, and the cycle repeats...
 
 All these additional steps around writing the code may seem insignificant at first glance, but their accumulation results in considerable friction. Additionally, there will be very few manual executions, meaning limited opportunities to gauge progress and adjust the code accordingly, coupled with the mental burden of compiling and running the program manually.
+
 ## Landing page
 todo
 
