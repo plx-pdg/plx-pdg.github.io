@@ -6,3 +6,5 @@
 - [Features](./features.md)
 - [Technical documentation](./docs.md)
 - [Contribution guide](./contribution.md)
+- [Return to the Home page](../../README.md)
+
