@@ -25,6 +25,9 @@ TODO: continue this list
 1. It should be easy to create new exos and maintain them, converting an existing C++ exo should take less than 2 minutes.
 1. The watcher should be performant: it should only watch files that could be modified by the student or teacher, it should take less than 100ms to see detect a change.
 1. PLX should be usable during exo creation too to make sure the checks are passing on
+1. Once an exo is opened, with one IDE window at right and the terminal with PLX at left, the students should not need to open or move other windows and should be able to only `Alt+Tab`. All the automable steps should be automated to focus on learning tasks (including build, build configuration, running, output diffing, manual entries in terminal, detecting when to run, showing solution, switching to next exo).
+1. Switching to next exo should take less than 10 seconds. After this time: the IDE should be opened with the new file, and PLX should show the new exo details.
+1. Trivial exo files shoud not need any build configuration, PLX should be able to guess how to build the target with available files.
 
 ## For later
 PDG is only 3 weeks but we already had some improvements or ideas for future development
