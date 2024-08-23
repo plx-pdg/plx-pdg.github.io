@@ -15,32 +15,52 @@ todo: document other OS
 
 ## Mockups
 ### Home page
-For running PLX, the user need to choose the folder that contains the exercises if there is not ".plxproject" file in the given top-level folder the app provides a warning messages. The app will ask again for a folder.
+For running PLX, the user need to run `plx` in the correct folder that contains the exercises if there is not ".plxproject" file in the given top-level folder the app provides a warning messages. 
+
+<!--TODO: Think about the subfolder opening issue. The app will ask again for a folder.-->
 
 ![home.opti.svg](img/svg/home.opti.svg)
-Arrows on the picture are to illustrate the event. This is the home layout of the app PLX. There are three options on this page. First, press "r" to access the last exercise work that still needs to be finished. When PLX starts an exercise, it will automatically run the IDE with the correct file and compile the file for the first time. Secondly, press "l" to access the listing of exercises, and lastly press "?" to show the command of the app.
+
+Arrows on the picture illustrate the event. This is the home layout of the app PLX. There are three options on this page. First, press `r` to access the last exercise that still needs to be finished. When PLX starts an exercise, it will automatically open the IDE with the correct file and compile the file for the first time. Secondly, press `l` to access the listing of exercises, and lastly press `?` to show the command of the app.
+
 ### List page
 
 ![list-1.opti.svg](img/svg/list-1.opti.svg)
 
-On the list view, there are two columns the left one for the subject that is fixed and the right side for the exercises that change instead of the chosen subject. Press "ENTER" to go inside the subject and access the list of exercises and "ESC" to go back.
+On the list view, there are two columns: 
+1. the left one for the list of subjects that doesn't change
+1. the right side for the list of exercises for the current subject (the list immediately change when we select another subject). Press `Enter` to go inside the subject and access the list of exercises and `Esc` to go back.
 
 ![list-2.opti.svg](img/svg/list-2.opti.svg)
-The code colour of exercises is green = done, orange = one test pass, and default colour = otherwise. To navigate in the list, use caps "k" for going up and "j" for going down.
+
+The meaning of colours for exercises: green = done, orange = one test pass, and default colour = otherwise. To navigate in the list, use `k` for going up and `j` for going down.
+
 ![preview-exo.opti.svg](img/svg/preview-exo.opti.svg)
-Press "ENTER" to go to the exercise preview and "ESC" to go back to the exercise list. The preview exercise gives the explanation and the path.
+
+Press "ENTER" to go to the exercise preview and "ESC" to go back to the exercise list. The preview exercise shows the instruction and the path of the main file, but doesn't run any build in background to save resources. The preview is not another page, therefor the `j` and `k` shortcuts will continue to work and the preview will be adapted.
+
 ### Exercise page
 ![exo-1.opti.svg](img/svg/exo-1.opti.svg)
-The practising validity tests or points that are red when they are not done and green otherwise. To navigate and see details of the validity points use "CTRL + u" up and "CTRL + d" down. When user save exercise file on the IDE, PLX will automatically update the status of the validity test or points.
+
+The checks are red when they are not fail and green otherwise. The first failing check is automatically opened. To navigate and see details of the next checks use "Ctrl+d" down and "Ctrl+u" up. When the user saves the exercise file on the IDE, PLX will automatically run compilation and checks, and update the results of the checks.
+
 ![exo-2.opti.svg](img/svg/exo-2.opti.svg)
-When the exercise is done all validity points that are green, the user have the options press "s" to see the solution. Scrolling inside the solution is with caps "k"(up) and "j"(down).
+
+When all checks are green the exo is done, the user has the options to press "s" to see the solution. Scrolling inside the solution is with "k" (up) and "j" (down).
+
 ![error.opti.svg](img/svg/error.opti.svg)
+
 This is an example of report error of compilation if the user save the file and there is a issue to compile the code.
+
 ### Case study without PLX
 Let's consider a typical exercise: 
-![[example-exo.png]]
-To solve this exercise, we first read the instructions, then open an IDE, manually create a `main.c` file, copy-paste the starter code, read the existing code, and complete the parts that need to be developed. Once we believe the code is ready, we compile it by opening a terminal in the IDE and typing `gcc dog main.c`—oops, it should have been `gcc -o dog main.c. 
-![[Pasted image 20240823115019.png]]
+
+![instruction](img/png/example-exo.png)
+
+To solve this exercise, we first read the instructions, then open an IDE, manually create a `main.c` file, copy-paste the starter code, read the existing code, and complete the parts that need to be developed. Once we believe the code is ready, we compile it by opening a terminal in the IDE and typing `gcc dog main.c`—oops, it should have been `gcc -o dog main.c`
+
+![compile error](img/png/error-cmd-compile.png)
+
 We then input the name and number of legs, and compare the output manually to see if it matches the expected result. Opening the instructions again, we realize that the number of legs display is missing! We go back to the code, add the age variable, recompile, and re-run the program, entering the name and number of legs once more. This time, is the output correct? Now we check our code against the solution. Okay, we could have used `printf` instead of `puts()` twice to display the full name. Moving on to the next exercise, we search for the instructions, and the cycle repeats...
 
 All these additional steps around writing the code may seem insignificant at first glance, but their accumulation results in considerable friction. Additionally, there will be very few manual executions, meaning limited opportunities to gauge progress and adjust the code accordingly, coupled with the mental burden of compiling and running the program manually.
