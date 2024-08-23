@@ -14,6 +14,45 @@ todo: document release process
 todo: document other OS
 
 ## Mockups
+## Case study with the classic experience
+Let's consider a typical exercise:  
+#### Dog message
+Write a small program that displays this message built with the first 2 args. You don't need to check the second arg to be a number.
+
+Example execution:
+```sh
+> ./dog 
+Error: missing argument firstname and legs number
+> ./dog Joe 4
+The dog is Joe and has 4 legs
+```
+
+<details>
+<summary>Solution</summary>
+
+```
+#include <stdio.h>
+
+int main(int argc, char **argv) {
+  if (argc < 3)
+    printf("Error: missing argument firstname and legs number");
+  else
+    printf("The dog is %s and has %s legs\n", argv[1], argv[2]);
+}
+```
+
+</details>
+
+---
+To solve this exercise, we first read the instruction, then open an IDE, manually create a `main.c` file, copy-paste the starter code, read the existing code, and complete the parts that need to be developed. Once we believe the code is ready, we compile it by opening a terminal in the IDE and typing `gcc dog main.c` — oops! it should have been `gcc -o dog main.c`
+
+![compile error](img/png/error-cmd-compile.png)
+
+After this, we input the name and number of legs, and compare the output manually to see if it matches the expected result. Opening the instruction again, we realize that the number of legs has not displayed ! We go back to the code, add the age variable, recompile, and run the program again, entering the name and number of legs once more. This time, is the output correct? Now we check our code against the solution... Okay, we could have used `printf` instead of `puts()` twice to display the full name. Moving on to the next exercise, we search for the instruction, and the cycle repeats...
+
+All these additional steps around writing the code may seem insignificant at first glance, but their accumulation results in considerable friction. Additionally, there will be very few manual executions, meaning limited opportunities to gauge progress and adjust the code accordingly, coupled with the mental burden of compiling and running the program manually.
+
+## Case study with the PLX experience
 ### Home page
 For running PLX, the user need to run `plx` in the correct folder that contains the exercises if there is not ".plxproject" file in the given top-level folder the app provides a warning messages. 
 
@@ -28,8 +67,9 @@ Arrows on the picture illustrate the event. This is the home layout of the app P
 ![list-1.opti.svg](img/svg/list-1.opti.svg)
 
 On the list view, there are two columns: 
-1. the left one for the list of subjects that doesn't change
-1. the right side for the list of exercises for the current subject (the list immediately change when we select another subject). Press `Enter` to go inside the subject and access the list of exercises and `Esc` to go back.
+-  the left one for the list of subjects that doesn't change
+-  the right side for the list of exercises for the current subject (the list immediately change when we select another subject). 
+- Press `Enter` to go inside the subject and access the list of exercises and `Esc` to go back.
 
 ![list-2.opti.svg](img/svg/list-2.opti.svg)
 
@@ -37,36 +77,22 @@ The meaning of colours for exercises: green = done, orange = one test pass, and 
 
 ![preview-exo.opti.svg](img/svg/preview-exo.opti.svg)
 
-Press "ENTER" to go to the exercise preview and "ESC" to go back to the exercise list. The preview exercise shows the instruction and the path of the main file, but doesn't run any build in background to save resources. The preview is not another page, therefor the `j` and `k` shortcuts will continue to work and the preview will be adapted.
+Press `Enter` to go to the exercise preview and `Esc` to go back to the exercise list. The preview exercise shows the instruction and the path of the main file, but doesn't run any build in background to save resources. The preview is not another page, therefor the `j` and `k` shortcuts will continue to work and the preview will be adapted.
 
 ### Exercise page
 ![exo-1.opti.svg](img/svg/exo-1.opti.svg)
 
-The checks are red when they are not fail and green otherwise. The first failing check is automatically opened. To navigate and see details of the next checks use "Ctrl+d" down and "Ctrl+u" up. When the user saves the exercise file on the IDE, PLX will automatically run compilation and checks, and update the results of the checks.
+The checks are red when they are not fail and green otherwise. The first failing check is automatically opened. To navigate and see details of the next checks use `Ctrl+d` down and `Ctrl+u` up. When the user saves the exercise file on the IDE, PLX will automatically run compilation and checks, and update the results of the checks.
 
 ![exo-2.opti.svg](img/svg/exo-2.opti.svg)
 
-When all checks are green the exo is done, the user has the options to press "s" to see the solution. Scrolling inside the solution is with "k" (up) and "j" (down).
+When all checks are green the exo is done, the user has the options to press `s` to see the solution. Scrolling inside the solution is with `k` (up) and `j` (down).
 
 ![error.opti.svg](img/svg/error.opti.svg)
 
 This is an example of report error of compilation if the user save the file and there is a issue to compile the code.
 
 
-### Case study with the PLX experience
-
-### Case study with the classic experience
-Let's consider a typical exercise: 
-
-![instruction](img/png/example-exo.png)
-
-To solve this exercise, we first read the instruction, then open an IDE, manually create a `main.c` file, copy-paste the starter code, read the existing code, and complete the parts that need to be developed. Once we believe the code is ready, we compile it by opening a terminal in the IDE and typing `gcc dog main.c` — oops! it should have been `gcc -o dog main.c`
-
-![compile error](img/png/error-cmd-compile.png)
-
-After this, we input the name and number of legs, and compare the output manually to see if it matches the expected result. Opening the instruction again, we realize that the number of legs has not displayed ! We go back to the code, add the age variable, recompile, and run the program again, entering the name and number of legs once more. This time, is the output correct? Now we check our code against the solution... Okay, we could have used `printf` instead of `puts()` twice to display the full name. Moving on to the next exercise, we search for the instruction, and the cycle repeats...
-
-All these additional steps around writing the code may seem insignificant at first glance, but their accumulation results in considerable friction. Additionally, there will be very few manual executions, meaning limited opportunities to gauge progress and adjust the code accordingly, coupled with the mental burden of compiling and running the program manually.
 
 ## Landing page
 todo
