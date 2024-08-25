@@ -8,6 +8,7 @@
     }
   },
   "styles": {
+    "favicon": "static/favicon.ico",
     "additional_css": [
       "extra.css"
     ]

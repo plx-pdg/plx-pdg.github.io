@@ -1,9 +1,28 @@
 /* Extra css to customize the look above the settings of the default Oranda theme. */
 h1, h2, h3, h4, h5, h6 {
   /* TODO: fix gradient color with logo colors*/
-		background: linear-gradient(to right, #1abadb 0%, #18e258 100%);
+
+		background: linear-gradient(to right, #fc1100 0%, #ffb000 100%);
 		-webkit-background-clip: text;
 		-webkit-text-fill-color: transparent;
+    /*To make the gradient adapt to length of heading but wrap on mobile*/
+		width: fit-content;
+    max-width: 100%;
+}
+
+body {
+  background-image: radial-gradient(#0d0d33, #010111)
+}
+
+code {
+  background-color: #1a1a56;
+    padding: 0 3px;
+    color: #d4d4fb;
+    border-radius: 4px;
+}
+
+.title {
+  display: none;
 }
 
 p, li, ul, ol, blockquote, code, pre {

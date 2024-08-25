@@ -4,14 +4,17 @@
 
 </div>
 
-<!--todo: include logo here -->
+<center>
+
+![logo of PLX](static/logo.svg)
+</center>
 
 ## Why
 > The classic way of doing programming exercises is full of friction that slows down the progress, and creates distraction from learning. PLX is here to redefine the experience, based on deliberate practice principles, because IT students really deserve it.
 
 #### Practice programming exos in delightful Learning eXperience
 
-Whether you are learning C, C++ or Java, PLX can bring you
+Whether you are learning `C`, `C++` or `Java`, PLX can bring you
 1. 🔁 **A feedback loop as short as possible**  
 The compilation and checks run immediately after file changes, removing the need and time to click the Play button or finding the build command and target file.
 1. 💯 **100% focus on the learning tasks**  
@@ -45,7 +48,7 @@ We don't have specific features for teachers right now, but if you are teaching 
 1. **Enhance your exercises by easily adding automated checks**  
 Used to verify the common and edge cases. Instead of installing a test runner, configuring compilation, you can already cover some cases just by checking the output defining program arguments in various situations.
 1. **Simplify or remove build configurations**  
-For most cases, PLX can guess how to build the exo, you don't need to provide a `Makefile` or `CMakeLists.txt`, nor a `poml.xml`. You can customize the build via a `xmake.lua` if necessary, making it very easy to add a dependency like GoogleTest without requiring students to install it.
+For most cases, PLX can guess how to build the exo, you don't need to provide a `Makefile` or `CMakeLists.txt`, nor a `pom.xml`. You can customize the build via a `xmake.lua` if necessary, making it very easy to add a dependency like GoogleTest without requiring students to install it.
 1. **Simplify management of exo files and solutions**  
 Quickly edit an exo from the list, use templates for faster exo redaction and run checks on starting file and solution file.
 1. **Enable general overview and easy review**  
