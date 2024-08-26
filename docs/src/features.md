@@ -47,6 +47,11 @@ PDG is only 3 weeks but we already had some improvements or ideas for future dev
 | Review mode | TODO | A big feature to help clone all forks, pull them regularly, run all tests, review specific exos, flag some answers. |
 | A global progress grid | TODO | To easily view general progress in colors |
 | "Lab/Single exo" mode | TODO | Just run a single exo definition without all the general project definition and lists around. |
+| Concurrent execution of checks | TODO | If a CLI has 10 checks and it takes 2 seconds to execute, running all tests one after the other will take 20 seconds ! If we could run them in 2.1 seconds that would be much better !!|
+| Smart execution of tests | TODO | Execute first failed displayed check first, then continue with next failing tests, and finally with already passing tests. Invent other strategies to run them more efficiently.|
 | | TODO | |
 | | TODO | |
 | | TODO | |
+| | TODO | |
+| | TODO | |
+
