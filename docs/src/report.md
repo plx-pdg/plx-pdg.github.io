@@ -2,7 +2,7 @@
 TODO: functionnal and non fonctionnal goals
 
 ## Architecture
-TODO: small schema
+![PLX-architecture.png](img/png/PLX-architecture.png)
 TODO: small description
 
 
