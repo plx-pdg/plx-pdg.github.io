@@ -16,6 +16,9 @@ todo: document other OS
 ## Mockups
 ## Case study with the classic experience
 Let's consider a typical coding exercise that David needs to resolve:  
+
+---
+
 #### Dog message
 Write a small program that displays this message built with the first 2 args. You don't need to check the second arg to be a number.
 
@@ -66,6 +69,8 @@ This workflow resume all different steps that David performs until he finish the
 ## Case study with the PLX experience
 
 Let's consider a struct exercise that Alice needs to resolve:  
+
+---
 
 #### 2. Basic dog struct
 
