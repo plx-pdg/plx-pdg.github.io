@@ -13,6 +13,19 @@ TODO: small description
 todo: document release process
 todo: document other OS
 
+#### Release process
+
+To release a new version of PLX, a CI is used for as follows : 
+
+1. Modify the changelog file to report the new version.
+2. Modify the cargo.toml file to report the new version.
+3. Run cargo build to update the cargo.lock file.
+4. Validate changes with tests.
+5. Push the changes.
+6. Create a new tag that is checked with the previous one to see if any modifications as been done(newer version).
+7. If so, create a new release of the app.
+
+
 ## Mockups
 ## Case study with the classic experience
 Let's consider a typical coding exercise that David needs to resolve:  
