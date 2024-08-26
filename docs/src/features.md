@@ -14,14 +14,12 @@ We described a lot of details about the a better experience, problems of the cur
 | Definition of automated check verifying outputs                                      | TODO   |                                                                                                                         |
 | Run automated output checks on starting files                                        | TODO   | Run check, generate result and diff if it differs                                                                       |
 | Run automated output checks on solution files                                        | TODO   | Adapt the compilation to build the solution files instead, and do the same things, after having checked the base files. |
-| Check pass or fail                                                                   | TODO   | Check and display if exercices passed or failed                                                                         |
-| If exo fail                                                                          | TODO   | Show why exercice failed (diff output / solution)                                                                       |
-| Start of the app (1)                                                                 | TODO   | When starting the app for the first time -> show first subject / chapter of the list                                    |
-| Start of the app (2)                                                                 | TODO   | When starting the app for the at least 2nd time -> open last exercice in progress or the next new exercice not done.    |
-| Preview of exos                                                                      | TODO   | When searching for an exercice todo -> do a preview of the exercice with the readable description.                      |
-| Save and load progress                                                               | TODO   | (Automatically) save user progress (exercices done / not done / in progress) and load it on subsequent app launches.    |
-| Code Editor opening                                                                  | TODO   | Open code editor when launching an exercice                                                                             |
-| PROF : Custom exercice creation                                                      | TODO   | Capability for teachers to create custom exercices                                                                      |
+| Execute a check on a given binary file                                                                   | TODO   | Check and display if exercices passed or failed                                                                         |
+| Show why checks are failing | TODO   | Show why exercice failed (diff output / solution)                                                                       |
+| Start of the app                                                                  | TODO   | It's possible to resume to the last exo or to the next logical one by pressing `r`. |
+| Preview of exos                                                                      | TODO   | When searching for an exercice to do -> a preview of the exo with the metadata but do not run compilation.                      |
+| Save and restore exos states                                                               | TODO   | Save exos states (done / not done / in progress) and restore it on subsequent app launches. Shows immediately the states in list with colors. Enable exo resuming.    |
+| Code Editor opening                                                                  | TODO   | Open code editor when launching or switch to another exercice, the editor is defined via `$EDITOR`                                                                             |
 | Provide integrated documentation                                                     | TODO   | Press `?`to get an integrated documentation of all the keybinds available                              |
 |                                                                                      |        |                                                                                                                         |
 
@@ -34,12 +32,12 @@ TODO: continue this list
 1. Once an exo is opened, with one IDE window at right and the terminal with PLX at left, the students should not need to open or move other windows and should be able to only `Alt+Tab`. All the automable steps should be automated to focus on learning tasks (including build, build configuration, running, output diffing, manual entries in terminal, detecting when to run, showing solution, switching to next exo).
 1. Switching to next exo should take less than 10 seconds. After this time: the IDE should be opened with the new file, and PLX should show the new exo details.
 1. Trivial exo files shoud not need any build configuration, PLX should be able to guess how to build the target with available files.
-2. Cross-plateform comptability meaning that PLX should work on all linux, windows and MAC machines.
-3. PLX shoud be designed in a modular way that allows for any easy addition of the features.
-4. Compiling an exercice should take less than (10 seconds). 
-5. When saving a file, the compilation starts. If a compilation is already running when saving a file, it should kill the actual compilation and launch a new compilation.
-6. When launching the tests, if tests are already running they should be stopped and relaunched again.
-7. PLX must have a file watcher and file parser to be able to watch the edited file(s) and return it states. This is necessary to be able to flag the exercice (in progress, done, not started) and return errors descriptions or status (passed / failed) of the exercice.
+1. Cross-plateform comptability meaning that PLX should work on all linux, windows and MAC machines.
+1. PLX shoud be designed in a modular way that allows for any easy addition of the features.
+1. Compiling an exercice should take less than (10 seconds). 
+1. When saving a file, the compilation starts. If a compilation is already running when saving a file, it should kill the actual compilation and launch a new compilation.
+1. When launching the tests, if tests are already running they should be stopped and relaunched again.
+1. PLX must have a file watcher and file parser to be able to watch the edited file(s) and return it states. This is necessary to be able to flag the exercice (in progress, done, not started) and return errors descriptions or status (passed / failed) of the exercice.
 
 ## For later
 PDG is only 3 weeks but we already had some improvements or ideas for future development
