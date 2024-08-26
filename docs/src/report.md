@@ -15,7 +15,7 @@ todo: document other OS
 
 ## Mockups
 ## Case study with the classic experience
-Let's consider a typical coding exercise that David need to do:  
+Let's consider a typical coding exercise that David needs to resolve:  
 #### Dog message
 Write a small program that displays this message built with the first 2 args. You don't need to check the second arg to be a number.
 
@@ -45,7 +45,7 @@ int main(int argc, char **argv) {
 
 ---
 
-To solve this exercise, David first read the instruction, then open his IDE, manually create a `main.c` file, copy-paste the starter code, read the existing code, and complete the parts that need to be developed. Once he believes the code is ready, David compiles it by opening a terminal in the IDE and typing `gcc dog main.c` — oops! it should have been `gcc -o dog main.c`
+To solve this exercise, David first read the instruction, then open his IDE, manually create a `main.c` file, copy-paste the starter code, read the existing code and complete the parts that need to be developed. Once he believes the code is ready, David compiles it by opening a terminal in the IDE and typing `gcc dog main.c` — oops! it should have been `gcc -o dog main.c`
 
 ```bash
 PS C:\Users\david\CLionProjects\dog> gcc dog main.c
@@ -54,18 +54,18 @@ collect2.exe: error: ld returned 1 exit status
 PS C:\Users\david\CLionProjects\dog> gcc -o dog main.c
 PS C:\Users\david\CLionProjects\dog> ./dog Joe 4
 The dog is Joe and has legs
-
 ```
 
-After this, David input the name and number of legs, and compare the output manually to see if it matches the expected result. Opening the instruction again, he realizes that the number of legs has not displayed ! He goes back to the code, add the age variable, recompiles, and runs the program again, entering the name and number of legs once more. This time, is the output correct? Now David checks his code against the solution... Okay, he could have used `printf` instead of `puts()` twice to display the full name. Moving on to the next exercise, he search for the instruction, and the cycle repeats...
+After this, David input the name and number of legs and compares the output manually to see if it matches the expected result. Opening the instruction again, he realizes that the number of legs is not displayed! He returns to the code, adds the age variable, recompiles, and runs the program again, entering the name and number of legs again. This time, is the output correct? Now David checks his code against the solution... Okay, he could have used `printf` instead of `puts()` twice to display the full name. Moving on to the next exercise, he searches for the instruction, and the cycle repeats...
 
 All these additional steps around writing the code may seem insignificant at first glance, but their accumulation results in considerable friction. Additionally, there will be very few manual executions, meaning limited opportunities to gauge progress and adjust the code accordingly, coupled with the mental burden of compiling and running the program manually.
 
 ![classic-xp.opti.svg](img/svg/classic-xp.opti.svg)
+This workflow resume all different steps that David performs until he finish the exercise.
 
 ## Case study with the PLX experience
 
-Let's consider a struct exercise that Alice need to do:  
+Let's consider a struct exercise that Alice needs to resolve:  
 
 #### 2. Basic dog struct
 
@@ -107,20 +107,20 @@ int main(int argc, char *argv[]) {
 </details>
 
 ---
-For running PLX, Alice needs to run `plx` in the correct folder that contains the exercises if there is not ".plxproject" file in the given top-level folder the app provides a warning messages. 
+For running PLX, Alice needs to run `plx` in the correct folder that contains the exercises if there is no ".plxproject" file in the given top-level folder the app provides a warning message. 
 
 <!--TODO: Think about the subfolder opening issue. The app will ask again for a folder.-->
 
 ![home.opti.svg](img/svg/home.opti.svg)
 
-Arrows on the picture illustrate the event. This is the home layout of the app PLX. There are three options on this page. First, press `r` to access the last exercise that still needs to be finished. When PLX starts an exercise, it will automatically open the IDE with the correct file and compile the file for the first time. Secondly, press `l` to access the listing of exercises, and lastly press `?` to show the command of the app. So, Alice use PLX for the first times then she press `l` and enter in the list view.
+Arrows on the picture illustrate the event. This is the home layout of the app PLX. There are three options on this page. First, press `r` to access the last exercise that still needs to be finished. When PLX starts an exercise, it will automatically open the IDE with the correct file and compile the file for the first time. Secondly, press `l` to access the listing of exercises, and lastly press `?` to show the command of the app. So, Alice use PLX for the first time then she press `l` and enter in the list view.
 
 ![list-1.opti.svg](img/svg/list-1.opti.svg)
 
 On the list view, there are two columns: 
--  the left one for the list of subjects that doesn't change
--  the right side for the list of exercises for the current subject (the list immediately change when we select another subject). 
-- Press `Enter` to go inside the subject and access the list of exercises and `Esc` to go back.
+-  the left one for the list of skills that doesn't change
+-  the right side for the list of exercises for the current skill (the list immediately changes when she selects another skill). 
+- Press `Enter` to go inside the skill and access the list of exercises and `Esc` to go back.
 
 ![list-2.opti.svg](img/svg/list-2.opti.svg)
 
@@ -128,22 +128,24 @@ The meaning of colours for exercises: green = done, orange = one test pass, and 
 
 ![preview-exo.opti.svg](img/svg/preview-exo.opti.svg)
 
-Press `Enter` to go to the exercise preview and `Esc` to go back to the exercise list. The preview exercise shows the instruction and the path of the main file, but doesn't run any build in background to save resources. The preview is not another page, therefor the `j` and `k` shortcuts will continue to work and the preview will be adapted.
+Press `Enter` to go to the exercise preview and `Esc` to go back to the exercise list. The preview exercise shows the instruction and the path of the main file, but doesn't run any build in the background to save resources. The preview is not another page, however the `j` and `k` shortcuts will continue to work and the preview will be adapted.
 
 ![exo-1.opti.svg](img/svg/exo-1.opti.svg)
 
-Alice found the exercise she needs to do. Her IDE opened the C file corresponding to the exercise.
-The checks are red when they are not fail and green otherwise. The first failing check is automatically opened. To navigate and see details of the next checks use `Ctrl+d` down and `Ctrl+u` up. When Alice saves the exercise file on the IDE, PLX will automatically run compilation and checks, and update the results of the checks.
-
-![exo-2.opti.svg](img/svg/exo-2.opti.svg)
-
-When all checks are green the exo is done, Alice has the options to press `s` to see the solution. Scrolling inside the solution is with `k` (up) and `j` (down).
+Alice found the exercise she needs to resolve. Her IDE opened the C file corresponding to the exercise. The checks are green when they do not fail and red otherwise. The first failing check is automatically opened. To navigate and see details of the next checks use `Ctrl+d` down and `Ctrl+u` up. When Alice saves the exercise file on the IDE, PLX will automatically run compilation and checks, and update the results of the checks.
 
 ![error.opti.svg](img/svg/error.opti.svg)
 
-This is an example of report error of compilation if Alice save the file and there is a issue to compile the code.
+Alice makes some changes in is code to resolve check 2 but when she saves is file, PLX run the compilation and give the compilation error.
+
+![exo-2.opti.svg](img/svg/exo-2.opti.svg)
+
+When all checks are green the exo is done and Alice has the options to press `s` to see the solution. Scrolling inside the solution is with `k` (up) and `j` (down).
 
 ![plx-xp.opti.svg](img/svg/plx-xp.opti.svg)
+
+This workflow resume all different steps that Alice performs on PLX until she finish the exercise.
+
 
 ## Landing page
 todo
