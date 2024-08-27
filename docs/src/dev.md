@@ -1,4 +1,12 @@
-# Technical documentation
+# Development documentation
+
+TODO: insert TOC here
+
+TODO: write this at the end of PDG time once we have a good structure
+
+## Current architecture
+TODO
+
 
 
 ## Logo design

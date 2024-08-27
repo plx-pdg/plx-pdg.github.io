@@ -1,6 +1,8 @@
 ## Build system design
 
-Design brainstorming on "How to structure a system to build C, C++ and Java, to support various dependencies and reduce or remove necessary configurations to a minimum ?"
+Design brainstorming on
+> How to structure a system to build C, C++ and Java, to support various dependencies and reduce/remove manual configurations to a minimum ?
+> How to make the build cache mostly invisible ?
 
 ```sh
 cppexos # exos repository

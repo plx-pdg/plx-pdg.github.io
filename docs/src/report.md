@@ -1,36 +1,8 @@
 ## Project description
-TODO: functionnal and non fonctionnal goals
 
-## Architecture
+## Planned architecture
 ![PLX-architecture.png](img/png/PLX-architecture.png)
 TODO: small description
-
-
-## CI/CD strategy
-1. On each PR (and when new commits arrive) and on push on main, `cargo build` and `cargo test` are run to make sure everything is working
-1. On each git tag, we will run a CI job to test, build and run `cargo publish` to release PLX on [crates.io](https://crates.io/crates/plx)
-
-todo: document release process
-todo: document other OS
-
-#### Release process
-
-To release a new version of PLX, here are the manual and CI steps:
-
-1. Create a new release branch
-1. Choose a new version number based following semantic version
-1. Modify the `CHANGELOG.md` file to document changes since last release
-1. Modify the `Cargo.toml` file with the chosen version
-1. Run `cargo build` to update the `Cargo.lock` file.
-1. Push the changes
-1. Open and merge PR of this release branch (tests must pass so we cannot release code with compilation errors)
-
-The CI release job starts and detect a version change (version in `Cargo.toml` different from the latest git tag) so the release process start
-1. Create a new tag with the extracted version
-1. Create a new release on Github with a link to the CHANGELOG file
-1. Run `cargo publish` to publish plx on `crates.io`
-
-The result is that running `cargo install plx` again will install the latest released version.
 
 
 ## Mockups
