@@ -6,7 +6,7 @@ This is a documentation driven design, this is the state of our research on the 
 We believe the best structure will lead to the following qualities: 
 1. Speed to create new exos and editing existing ones
 1. Ease of learning the structure and synatx to create and maintain exos
-1. Ease of developing a solution and adding checks.
+1. Ease of developing a solution and adding checks without always writing unit tests with test runner
 
 This can be measured with the following speed metrics:
 1. Converting an existing C++ exo should take less than 2 minutes.
@@ -23,11 +23,18 @@ This can be measured with the following speed metrics:
 Existing projects like `rustlings` and inspired projects like `haskellings`, `cplings`, `ziglings`, and even PRJS has opinions on their structure and their metadata system. Each language have its own constraints, build system, ease of testing, and testing tools integration... but there is probably new ideas and things to inspire from these tools. In addition to reading the contributing guides, looking at GitHub issues from new contributors on these repositories could also indicate advantages or flaws in the structure that can help us decide which direction to take.
 
 ### Rustlings
+Website: [rustlings.cool](https://rustlings.cool) - [CONTRIBUTING.md](https://github.com/rust-lang/rustlings/blob/main/CONTRIBUTING.md) - [Third party exos (outside of Rustlings repos)](https://github.com/rust-lang/rustlings/blob/main/THIRD_PARTY_EXERCISES.md) 
+
 
 ### PRJS
 
+Website: [Repos samuelroland/prjs](https://github.com/samuelroland/prjs) - Exo management: [exos.md](https://github.com/samuelroland/prjs/blob/main/exos.md)
+
 ### Cplings
+Website: [Repos rdjondo/cplings](https://github.com/rdjondo/cplings) - Exo management: [exos.md](https://github.com/samuelroland/prjs/blob/main/exos.md)
+
+### Golings
+Website: [Repos mauricioabreu/golings](https://github.com/mauricioabreu/golings) - [CONTIBUTING.md](https://github.com/mauricioabreu/golings/blob/main/CONTRIBUTING.md)
 
 ### Ziglings
-
 
