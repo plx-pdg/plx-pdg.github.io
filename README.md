@@ -44,15 +44,13 @@ As you can imagine PLX can have **a big impact on the speed and the flow of trai
 Already developed a battleship in command line ? Or any kind of game with user inputs and change of boards ? How can you make sure all scenarios do work ? You can either test it one by one at the end or regularly, but that's boring... What if you could describe your scenarios with expected outputs and inputs to enter to validate the whole game in various situations ?
 
 ## Helping teachers
-We don't have specific features for teachers right now, but if you are teaching a course related to C, C++ or Java, PLX can help you to
-1. **Enhance your exercises by easily adding automated checks**  
-Used to verify the common and edge cases. Instead of installing a test runner, configuring compilation, you can already cover some cases just by checking the output defining program arguments in various situations.
-1. **Simplify or remove build configurations**  
-For most cases, PLX can guess how to build the exo, you don't need to provide a `Makefile` or `CMakeLists.txt`, nor a `pom.xml`. You can customize the build via a `xmake.lua` if necessary, making it very easy to add a dependency like GoogleTest without requiring students to install it.
-1. **Simplify management of exo files and solutions**  
-Quickly edit an exo from the list, use templates for faster exo redaction and run checks on starting file and solution file.
-1. **Enable general overview and easy review**  
-If all your students fork a main repository and regularly push their answers, you can clone all those repositories and new opportunties for review could be possible. This is not supported either, but we could imagine a review mode where PLX could run all tests for all exos for all students! This would allow to generate a statistic grid to see the global progress. It enables the human review of each answer in a row to generate discussions and feedback in class.
+If you are teaching a course related to C, C++ or Java, PLX can help you to
+1. ✅ Enhance your exercises by easily adding automated checks
+1. 🏗️ Simplify or remove build configurations
+1. ⌨️Simplify management of exo files and solutions
+1. 📊 Enable general overview and easy review
+
+Want to know more ? See [Experience for teachers](/docs/src/teachers.md) in the docs.
 
 ## Course management
 We have designed a ...

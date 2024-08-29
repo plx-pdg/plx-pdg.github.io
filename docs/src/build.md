@@ -1,4 +1,4 @@
-## Build system design
+# Build system design
 
 Design brainstorming on
 > How to structure a system to build C, C++ and Java, to support various dependencies and reduce/remove manual configurations to a minimum ?
@@ -31,7 +31,7 @@ cppexos # exos repository, C++ as example here
     build
 ```
 
-### Build challenges
+## Build challenges
 
 1. **Problem 1**: How to detect project type ?
     1. How to avoid the need to define the compilation type ? How to guess it instead ?
@@ -44,7 +44,7 @@ cppexos # exos repository, C++ as example here
     1. We cannot have a common flat `build` folder for all exos, because it will create strange errors. We cannot trash it before each exo, because we would loose the big speed improvement of build cache when running all exos or running an exo done in the past.
     1. How to differentiate generated and manually written build configurations ?
 
-### Build strategies
+## Build strategies
 **Solution to problem 1**: Using existing configuration or guess how to build trivial cases
 1. Define `ExoType = None`
 1. If the exo folder contains a `xmake.lua`, it is used to build: `ExoType = xmake`
