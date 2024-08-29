@@ -48,7 +48,7 @@ PDG is only 3 weeks but we already had some improvements or ideas for future dev
 | "Lab/Single exo" mode | TODO | Just run a single exo definition without all the general project definition and lists around. |
 | Concurrent execution of checks | TODO | If a CLI has 10 checks and it takes 2 seconds to execute, running all tests one after the other will take 20 seconds ! If we could run them in 2.1 seconds that would be much better !!|
 | Smart execution of tests | TODO | Execute first failed displayed check first, then continue with next failing tests, and finally with already passing tests. Invent other strategies to run them more efficiently.|
-| | TODO | |
+| Add a `run` command to PLX | TODO | Enable running an exo binary without digging into `build` folder. This could be useful for labs and PCO exos when we want to run the binary exo ourself to choose arguments or pipe into `grep`, without typing `../../build/mutex/mut1/exo` |
 | | TODO | |
 | | TODO | |
 | | TODO | |
