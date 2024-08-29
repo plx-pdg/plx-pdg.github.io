@@ -50,7 +50,7 @@ If you are teaching a course related to C, C++ or Java, PLX can help you to
 1. ⌨️Simplify management of exo files and solutions
 1. 📊 Enable general overview and easy review
 
-Want to know more ? See [Experience for teachers](/docs/src/teachers.md) in the docs.
+Want to know more ? See [Experience for teachers](/book/teachers.html) in the docs.
 
 ## Course management
 We have designed a ...
