@@ -47,7 +47,7 @@ Already developed a battleship in command line ? Or any kind of game with user i
 If you are teaching a course related to C, C++ or Java, PLX can help you to
 1. ✅ Enhance your exercises by easily adding automated checks
 1. 🏗️ Simplify or remove build configurations
-1. ⌨️Simplify management of exo files and solutions
+1. ⌨️ Simplify management of exo files and solutions
 1. 📊 Enable general overview and easy review
 
 Want to know more ? See [Experience for teachers](/book/teachers.html) in the docs.
