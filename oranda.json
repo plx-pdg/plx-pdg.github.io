@@ -1,6 +1,7 @@
 {
   "project": {
-    "name": "PLX"
+    "name": "PLX",
+    "description": "What if programming practice was a delightful learning experience ? Inspired by deliberate practice, PLX aims to redefine the learning experience of doing programming exercises in C, C++ or Java, like katas, with automated checks to reduce the feedback loop time and help teachers build practice driven courses."
   },
   "components": {
     "mdbook": {
@@ -12,5 +13,11 @@
     "additional_css": [
       "extra.css"
     ]
+  },
+  "marketing": {
+    "social": {
+      "image": "static/social.png",
+      "image_alt": "What if programming practice was a delightful learning experience ?"
+    }
   }
 }
