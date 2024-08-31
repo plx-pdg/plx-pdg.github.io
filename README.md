@@ -57,3 +57,11 @@ We have designed a ...
 
 <!--TODO: continue this after conception-->
 <!--todo: small preview of course management solution.-->
+
+###### Useful links
+[WHY ?](/book/why.html) -
+[Git repository of PLX](https://github.com/plx-pdg/plx) -
+[Git repository of this website](https://github.com/plx-pdg/plx-pdg.github.io) -
+[Development documentation](/book/dev.html)
+
+

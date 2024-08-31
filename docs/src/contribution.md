@@ -1,5 +1,7 @@
 # Contribution guide
 
+**WARNING: we are not open to contribution right now, this guide will be useful in the future or just for the PDG team.**
+
 ## Development
 
 In addition to have installed the prerequisites in the Installation page, you have to
