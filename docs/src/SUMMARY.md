@@ -2,6 +2,7 @@
 
 - [Installation](./install.md)
 - [Why?](./why.md)
+- [Changelog](./CHANGELOG.md)
 - [Report](./report.md)
 - [Features development](./features.md)
 - [Experience for teachers](./teachers.md)

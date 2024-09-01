@@ -60,6 +60,10 @@ jobs:
       - uses: dtolnay/rust-toolchain@stable
       - uses: swatinem/rust-cache@v2
 
+      - name: Download extra files from the main repos (CHANGELOG.md)
+        run: |
+          curl https://raw.githubusercontent.com/plx-pdg/plx/main/CHANGELOG.md -o docs/src/CHANGELOG.md
+
       # If you use any mdbook plugins, here's the place to install them!
 
       # Install and run oranda (and mdbook)!
