@@ -1,0 +1,30 @@
+#slideshow {
+	background-color: #191919;
+	color: white;
+height: 100%;
+position: relative;
+
+	code {
+		color: black;
+	}
+	h1,
+	h2,
+	h3,
+	h4 {
+		background: #1abadb;
+		background: linear-gradient(to right, #fc1100 0%, #ffb000 100%);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+    /*To make the gradient adapt to length of heading but wrap on mobile*/
+		width: fit-content;
+    max-width: 100%;
+	}
+
+	.slidev-layout.default {
+		padding: 1em;
+	}
+
+	p:has(img) {
+		margin: 0px;
+	}
+}

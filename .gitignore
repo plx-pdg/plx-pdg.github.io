@@ -4,3 +4,4 @@ public/
 docs/src/img/svg/*.svg
 !docs/src/img/svg/*.opti.svg
 index.html
+presentation/node_modules
