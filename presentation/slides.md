@@ -33,9 +33,15 @@ layout: center
 ![architecture](./workflow.png)
 
 ---
-### CI
+### CI - Contributing
 
-![architecture](./ci-workflow.png)
+![architecture](./contributing-workflow.png)
+
+---
+
+### CI - Release
+
+![architecture](./release-workflow.png)
 
 ---
 ### Challenges
