@@ -74,3 +74,7 @@ layout: center
 </v-clicks>
 
 ---
+
+### Landing Page
+
+![landing_page_home](./img/svg/landing_page.png)
