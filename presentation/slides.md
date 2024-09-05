@@ -35,7 +35,7 @@ layout: center
 - syntect
 </v-clicks>
 
-![syntax highlighting library](./img/svg/syntax_highlight.png)
+![syntax highlighting library](/img/png/syntax_highlight.png)
 
 ---
 
@@ -79,4 +79,4 @@ layout: center
 
 ### Landing Page
 
-![landing_page_home](./img/svg/landing_page.png)
+![landing_page_home](/img/png/landing_page.png)
