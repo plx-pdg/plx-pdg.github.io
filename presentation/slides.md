@@ -24,11 +24,20 @@ layout: center
 
 ### Architecture
 
-
-![architecture](./img/png/PLX-architecture.png)
+![architecture](./app-systems.png)
 
 ---
 
+### Architecture
+
+![architecture](./workflow.png)
+
+---
+### CI
+
+![architecture](./ci-workflow.png)
+
+---
 ### Challenges
 <v-clicks>
 
