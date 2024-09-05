@@ -9,7 +9,7 @@ layout: center
 
 ### WHY ?
 
-![classic-xp](./img/svg/classic-xp.svg)
+![classic-xp](./img/svg/classic-xp.opti.svg)
 
 ---
 
