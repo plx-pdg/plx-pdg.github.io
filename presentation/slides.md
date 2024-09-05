@@ -13,15 +13,6 @@ layout: center
 
 ---
 
-### Technologies
-
-1. Rust
-1. xmake
-1. notify-rs
-1. TODO
-
----
-
 ### Architecture
 
 ![architecture](./app-systems.png)
@@ -33,6 +24,19 @@ layout: center
 ![architecture](./workflow.png)
 
 ---
+
+### Technologies
+
+<v-clicks>
+- Rust 
+- notify
+- ratatui
+- serde + toml
+- syntect
+</v-clicks>
+
+---
+
 ### CI - Contributing
 
 ![architecture](./contributing-workflow.png)
@@ -44,31 +48,29 @@ layout: center
 ![architecture](./release-workflow.png)
 
 ---
+
+### Work convention
+
+<v-clicks>
+- Versioning: semver 
+- Changelog: Keep a Changelog 
+- Commits: Conventionnals commits
+</v-clicks>
+
+---
+
+### File Architecture
+
+![image](https://github.com/user-attachments/assets/a84942e4-618f-47ef-8242-7969a01f5f0d)
+
+---
+
 ### Challenges
+
 <v-clicks>
-
-
-</v-clicks>
-
-
----
-
-### Tests
-
-<!--![debug-terminal.png](./imgs/debug-terminal.png)-->
-
----
-
-
-### Fun moments
-<v-clicks>
-
-
+- Time (support java) 
+- Learn Rust as you go
+- Windows on CI
 </v-clicks>
 
 ---
-layout: center
----
-
-### Demo time !
-TODO
