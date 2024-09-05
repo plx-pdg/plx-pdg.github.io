@@ -35,6 +35,8 @@ layout: center
 - syntect
 </v-clicks>
 
+![syntax highlighting library](./img/svg/syntax_highlight.png)
+
 ---
 
 ### CI - Contributing
