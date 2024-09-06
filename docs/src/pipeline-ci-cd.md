@@ -18,7 +18,7 @@ todo: document other OS-->
   1. Github is configured to block merging if CI jobs are failing.
   1. We try to delete the branch when PR is merged.
 
-![workflow](../../presentation/contributing-workflow.png)
+![workflow](img/png/contributing-workflow.png)
 ### Release strategy
 
 To release a new version of PLX, here are the manual steps:
@@ -37,4 +37,4 @@ The CI release job starts and detect a version change (version in `Cargo.toml` d
 
 The result is that running `cargo install plx` again will install the new version!
 
-![workflow](../../presentation/release-workflow.png)
+![workflow](img/png/release-workflow.png)
