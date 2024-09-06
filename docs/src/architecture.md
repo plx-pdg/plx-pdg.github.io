@@ -1,7 +1,4 @@
 # Architecture
-## Planned architecture
-
-![PLX-architecture.png](img/png/PLX-architecture.png)
 
 ## Running architecture
 
