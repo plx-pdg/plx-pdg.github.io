@@ -11,3 +11,13 @@ We follow the [Keep a Changelog](https://keepachangelog.com) convention, we writ
 
 ### Commits
 We try to follow the [Conventionnal commits](https://conventionalcommits.org).
+
+### Contribution
+
+We use a standard contribution workflow
+
+- An issue per feature/bug
+- A branch to implement a new change
+- A PR so the change can be reviewed before merging it to main
+
+More info on how this contribution process is integrated into our CI/CD pipeline can be found [here](https://plx.rs/book/pipeline-ci-cd.html)
