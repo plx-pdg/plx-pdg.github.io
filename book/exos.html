@@ -1,0 +1,277 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js oranda-dark">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Exos management - PLX docs</title>
+
+
+        <!-- Custom HTML head -->
+        
+        <meta name="description" content="The documentation includes how to install, use and develop PLX.">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="icon" href="favicon.svg">
+        <link rel="shortcut icon" href="favicon.png">
+        <link rel="stylesheet" href="css/variables.css">
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/chrome.css">
+        <link rel="stylesheet" href="css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+        <link rel="stylesheet" href="oranda-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        <link rel="stylesheet" href="book.css">
+
+    </head>
+    <body>
+    <div id="body-container">
+        <!-- Provide site root to javascript -->
+        <script>
+            var path_to_root = "";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "oranda-dark" : "oranda-dark";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                var theme = localStorage.getItem('orandamdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('orandamdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            var theme;
+            try { theme = localStorage.getItem('orandamdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('oranda-dark')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded "><a href="install.html"><strong aria-hidden="true">1.</strong> Installation</a></li><li class="chapter-item expanded "><a href="why.html"><strong aria-hidden="true">2.</strong> Why?</a></li><li class="chapter-item expanded "><a href="CHANGELOG.html"><strong aria-hidden="true">3.</strong> Changelog</a></li><li class="chapter-item expanded "><a href="report.html"><strong aria-hidden="true">4.</strong> PDG-Report</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="project-description.html"><strong aria-hidden="true">4.1.</strong> Project-description</a></li><li class="chapter-item expanded "><a href="architecture.html"><strong aria-hidden="true">4.2.</strong> Architecture</a></li><li class="chapter-item expanded "><a href="mokups.html"><strong aria-hidden="true">4.3.</strong> Mockups</a></li><li class="chapter-item expanded "><a href="landing-page.html"><strong aria-hidden="true">4.4.</strong> Landing page</a></li><li class="chapter-item expanded "><a href="technical-choice.html"><strong aria-hidden="true">4.5.</strong> Technical choice</a></li><li class="chapter-item expanded "><a href="work-process.html"><strong aria-hidden="true">4.6.</strong> Work process</a></li><li class="chapter-item expanded "><a href="pipeline-ci-cd.html"><strong aria-hidden="true">4.7.</strong> Pipeline CI/CD</a></li></ol></li><li class="chapter-item expanded "><a href="features.html"><strong aria-hidden="true">5.</strong> Features development</a></li><li class="chapter-item expanded "><a href="teachers.html"><strong aria-hidden="true">6.</strong> Experience for teachers</a></li><li class="chapter-item expanded "><a href="dev.html"><strong aria-hidden="true">7.</strong> Development</a></li><li class="chapter-item expanded "><a href="contribution.html"><strong aria-hidden="true">8.</strong> Contribution guide</a></li><li class="chapter-item expanded "><a href="design.html"><strong aria-hidden="true">9.</strong> Design</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="exos.html" class="active"><strong aria-hidden="true">9.1.</strong> Exos management</a></li><li class="chapter-item expanded "><a href="build.html"><strong aria-hidden="true">9.2.</strong> Build system</a></li></ol></li><li class="chapter-item expanded "><a href="../../index.html"><strong aria-hidden="true">10.</strong> Return to the Home page</a></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="oranda-dark">Oranda Dark</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="oranda-light">Oranda Light</button></li>
+
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">PLX docs</h1>
+
+                    <div class="right-buttons">
+                        <a href="print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="exos-management"><a class="header" href="#exos-management">Exos management</a></h1>
+<p>This is a documentation driven design, this is the state of our research on the best exos management solution for the supported languages. This will probably be useful to future contributors who might want to understand why we made these decisions, help other <code>*lings</code> projects in their thinking,</p>
+<h2 id="defining-all-toml"><a class="header" href="#defining-all-toml">Defining all toml</a></h2>
+<h3 id="coursetoml"><a class="header" href="#coursetoml">course.toml</a></h3>
+<p>To create a course we need a name and a selection of skills (chapters) in a specific order.</p>
+<pre><code class="language-toml">name = "Full fictive course"
+skills = ["intro", "pointers", "parsing", "structs", "enums"]
+</code></pre>
+<h3 id="skilltoml"><a class="header" href="#skilltoml">skill.toml</a></h3>
+<p>To create a new skill, we need a name and a list of all the names of each exercices in a specific order.</p>
+<pre><code class="language-toml">name = 'Introduction'
+exos = ['basic-args', 'basic-output']
+</code></pre>
+<h3 id="exotoml"><a class="header" href="#exotoml">exo.toml</a></h3>
+<p>For each exercice we have :</p>
+<ul>
+<li>a name</li>
+<li>the instructions</li>
+<li>all the needed checks to be done</li>
+</ul>
+<pre><code class="language-toml">name = 'Basic arguments usage'
+instruction = 'The 2 first program arguments are the firstname and number of legs of a dog. Print a full sentence about the dog. Make sure there is at least 2 arguments, print an error if not.'
+[[checks]]
+name = 'Joe + 5 legs'
+args = ["Joe", "5"]
+test = {type= "output", expected = "The dog is Joe and has 5 legs" }
+[[checks]]
+name = 'No arg -&gt; error'
+test = {type= "output", expected = "Error: missing argument firstname and legs number"}
+[[checks]]
+name = 'One arg -&gt; error'
+args = ["Joe"]
+test = {type = "output", expected = "Error: missing argument firstname and legs number"}
+</code></pre>
+<h2 id="generated-toml"><a class="header" href="#generated-toml">Generated toml</a></h2>
+<h3 id="course-statetoml"><a class="header" href="#course-statetoml">.course-state.toml</a></h3>
+<p>This state is used to save the skill and exercise index for resume.</p>
+<pre><code class="language-toml">curr_skill_idx = 0
+curr_exo_idx = 0
+</code></pre>
+<h3 id="exo-statetoml"><a class="header" href="#exo-statetoml">.exo-state.toml</a></h3>
+<p>For each exercice, there is a state that can be in-progress, done or not done. There is also an optional favorite option to place the exercice into our personal selection.</p>
+<pre><code class="language-toml">state = "InProgress"
+favorite = false
+</code></pre>
+<h2 id="defining-the-best"><a class="header" href="#defining-the-best">Defining "the best"</a></h2>
+<p>We believe the best structure will lead to the following qualities:</p>
+<ol>
+<li>Speed to create new exos and editing existing ones</li>
+<li>Ease of learning the structure and synatx to create and maintain exos</li>
+<li>Ease of developing a solution and adding checks without always writing unit tests with test runner</li>
+</ol>
+<p>This can be measured with the following speed metrics:</p>
+<ol>
+<li>Converting an existing C++ exo should take less than 2 minutes.</li>
+<li>Converting "here is the expected output" to a PLX check should take less than 15seconds</li>
+</ol>
+<h2 id="goal"><a class="header" href="#goal">Goal</a></h2>
+<ol>
+<li>Define a folder and file structure to define a single exo and an entire course with all exos grouped by skills (sometimes we could just call them chapters).</li>
+<li>Define the syntax used to define the various exo metadata</li>
+<li>Define build configuration files and build hints if necessary</li>
+<li>Show different examples for various exo types in the 3 languages</li>
+<li>Define templates used to quickly fill new exos and how to use them</li>
+</ol>
+<h2 id="research-on-similar-tools"><a class="header" href="#research-on-similar-tools">Research on similar tools</a></h2>
+<p>Existing projects like <code>rustlings</code> and inspired projects like <code>haskellings</code>, <code>cplings</code>, <code>ziglings</code>, and even PRJS has opinions on their structure and their metadata system. Each language have its own constraints, build system, ease of testing, and testing tools integration... but there is probably new ideas and things to inspire from these tools. In addition to reading the contributing guides, looking at GitHub issues from new contributors on these repositories could also indicate advantages or flaws in the structure that can help us decide which direction to take.</p>
+<h3 id="rustlings"><a class="header" href="#rustlings">Rustlings</a></h3>
+<p>Website: <a href="https://rustlings.cool">rustlings.cool</a> - <a href="https://github.com/rust-lang/rustlings/blob/main/CONTRIBUTING.md">CONTRIBUTING.md</a> - <a href="https://github.com/rust-lang/rustlings/blob/main/THIRD_PARTY_EXERCISES.md">Third party exos (outside of Rustlings repos)</a></p>
+<h3 id="prjs"><a class="header" href="#prjs">PRJS</a></h3>
+<p>Website: <a href="https://github.com/samuelroland/prjs">Repos samuelroland/prjs</a> - Exo management: <a href="https://github.com/samuelroland/prjs/blob/main/exos.md">exos.md</a></p>
+<h3 id="cplings"><a class="header" href="#cplings">Cplings</a></h3>
+<p>Website: <a href="https://github.com/rdjondo/cplings">Repos rdjondo/cplings</a> - Exo management: <a href="https://github.com/samuelroland/prjs/blob/main/exos.md">exos.md</a></p>
+<h3 id="golings"><a class="header" href="#golings">Golings</a></h3>
+<p>Website: <a href="https://github.com/mauricioabreu/golings">Repos mauricioabreu/golings</a> - <a href="https://github.com/mauricioabreu/golings/blob/main/CONTRIBUTING.md">CONTIBUTING.md</a></p>
+<h3 id="ziglings"><a class="header" href="#ziglings">Ziglings</a></h3>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="design.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <a rel="next" href="build.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="design.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next" href="build.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="elasticlunr.min.js"></script>
+        <script src="mark.min.js"></script>
+        <script src="searcher.js"></script>
+
+        <script src="clipboard.min.js"></script>
+        <script src="highlight.js"></script>
+        <script src="book.js"></script>
+
+        <!-- Custom JS scripts -->
+
+
+    </div>
+    </body>
+</html>

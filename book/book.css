@@ -1,0 +1,28 @@
+
+/* Increase maximum width of content so images can be displayed a bit bigger */
+.content main {
+  max-width: 1000px;
+
+h1, h2, h3, h4, h5, h6 {
+		background: linear-gradient(to right, #fc1100 0%, #ffb000 100%);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+    /*To make the gradient adapt to length of heading but wrap on mobile*/
+		width: fit-content;
+    max-width: 100%;
+}
+  /*Make margins much slower but leave some space*/
+  h1 {
+    margin: 30px 0;
+  }
+  h2 {
+    margin: 20px 0;
+  }
+  h3, h4 {
+    margin: 10px 0;
+  }
+  p {
+    margin: 7px 0;
+  }
+}
+

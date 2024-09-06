@@ -1,0 +1,254 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js oranda-dark">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Features development - PLX docs</title>
+
+
+        <!-- Custom HTML head -->
+        
+        <meta name="description" content="The documentation includes how to install, use and develop PLX.">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="icon" href="favicon.svg">
+        <link rel="shortcut icon" href="favicon.png">
+        <link rel="stylesheet" href="css/variables.css">
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/chrome.css">
+        <link rel="stylesheet" href="css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+        <link rel="stylesheet" href="oranda-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        <link rel="stylesheet" href="book.css">
+
+    </head>
+    <body>
+    <div id="body-container">
+        <!-- Provide site root to javascript -->
+        <script>
+            var path_to_root = "";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "oranda-dark" : "oranda-dark";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                var theme = localStorage.getItem('orandamdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('orandamdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            var theme;
+            try { theme = localStorage.getItem('orandamdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('oranda-dark')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded "><a href="install.html"><strong aria-hidden="true">1.</strong> Installation</a></li><li class="chapter-item expanded "><a href="why.html"><strong aria-hidden="true">2.</strong> Why?</a></li><li class="chapter-item expanded "><a href="CHANGELOG.html"><strong aria-hidden="true">3.</strong> Changelog</a></li><li class="chapter-item expanded "><a href="report.html"><strong aria-hidden="true">4.</strong> PDG-Report</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="project-description.html"><strong aria-hidden="true">4.1.</strong> Project-description</a></li><li class="chapter-item expanded "><a href="architecture.html"><strong aria-hidden="true">4.2.</strong> Architecture</a></li><li class="chapter-item expanded "><a href="mokups.html"><strong aria-hidden="true">4.3.</strong> Mockups</a></li><li class="chapter-item expanded "><a href="landing-page.html"><strong aria-hidden="true">4.4.</strong> Landing page</a></li><li class="chapter-item expanded "><a href="technical-choice.html"><strong aria-hidden="true">4.5.</strong> Technical choice</a></li><li class="chapter-item expanded "><a href="work-process.html"><strong aria-hidden="true">4.6.</strong> Work process</a></li><li class="chapter-item expanded "><a href="pipeline-ci-cd.html"><strong aria-hidden="true">4.7.</strong> Pipeline CI/CD</a></li></ol></li><li class="chapter-item expanded "><a href="features.html" class="active"><strong aria-hidden="true">5.</strong> Features development</a></li><li class="chapter-item expanded "><a href="teachers.html"><strong aria-hidden="true">6.</strong> Experience for teachers</a></li><li class="chapter-item expanded "><a href="dev.html"><strong aria-hidden="true">7.</strong> Development</a></li><li class="chapter-item expanded "><a href="contribution.html"><strong aria-hidden="true">8.</strong> Contribution guide</a></li><li class="chapter-item expanded "><a href="design.html"><strong aria-hidden="true">9.</strong> Design</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="exos.html"><strong aria-hidden="true">9.1.</strong> Exos management</a></li><li class="chapter-item expanded "><a href="build.html"><strong aria-hidden="true">9.2.</strong> Build system</a></li></ol></li><li class="chapter-item expanded "><a href="../../index.html"><strong aria-hidden="true">10.</strong> Return to the Home page</a></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="oranda-dark">Oranda Dark</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="oranda-light">Oranda Light</button></li>
+
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">PLX docs</h1>
+
+                    <div class="right-buttons">
+                        <a href="print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="features"><a class="header" href="#features">Features</a></h1>
+<p>We described a lot of details about the a better experience, problems of the current experience, but here is <strong>a complete central list of features we need to develop</strong> during PDG and some other ideas for later. Some of them will have a dedicated issue on GitHub, but this is easier to see the global picture and progress here.</p>
+<h2 id="for-pdg"><a class="header" href="#for-pdg">For PDG</a></h2>
+<h3 id="functionnal-requirements"><a class="header" href="#functionnal-requirements">Functionnal requirements</a></h3>
+<div class="table-wrapper"><table><thead><tr><th>Feature</th><th>Status</th><th>Description</th></tr></thead><tbody>
+<tr><td>View the Home page</td><td>TODO</td><td></td></tr>
+<tr><td>View the List page</td><td>TODO</td><td>With the list of skills and exos</td></tr>
+<tr><td>C++ exo build+execution, but without configuration and without build folder visible</td><td>TODO</td><td>Support compiling C++ in single or multi files via Xmake without config in a separated build directory</td></tr>
+<tr><td>Java exo build+execution, but without configuration and without build folder visible</td><td>TODO</td><td>Support compiling Java in single or multi files with <code>javac</code></td></tr>
+<tr><td>Exo creation with one main file or possibly more starting files</td><td>TODO</td><td>Support a way to describe those metadata and indicate which files are relevant.</td></tr>
+<tr><td>Definition of automated check verifying outputs</td><td>TODO</td><td></td></tr>
+<tr><td>Run automated output checks on starting files</td><td>TODO</td><td>Run check, generate result and diff if it differs</td></tr>
+<tr><td>Run automated output checks on solution files</td><td>TODO</td><td>Adapt the compilation to build the solution files instead, and do the same things, after having checked the base files.</td></tr>
+<tr><td>Execute a check on a given binary file</td><td>TODO</td><td>Check and display if exercices passed or failed</td></tr>
+<tr><td>Show why checks are failing</td><td>TODO</td><td>Show why exercice failed (diff output / solution)</td></tr>
+<tr><td>Start of the app</td><td>TODO</td><td>It's possible to resume to the last exo or to the next logical one by pressing <code>r</code>.</td></tr>
+<tr><td>Preview of exos</td><td>TODO</td><td>When searching for an exercice to do -&gt; a preview of the exo with the metadata but do not run compilation.</td></tr>
+<tr><td>Save and restore exos states</td><td>TODO</td><td>Save exos states (done / not done / in progress) and restore it on subsequent app launches. Shows immediately the states in list with colors. Enable exo resuming.</td></tr>
+<tr><td>Code Editor opening</td><td>TODO</td><td>Open code editor when launching or switch to another exercice, the editor is defined via <code>$EDITOR</code></td></tr>
+<tr><td>Provide integrated documentation</td><td>TODO</td><td>Press <code>?</code>to get an integrated documentation of all the keybinds available</td></tr>
+<tr><td></td><td></td><td></td></tr>
+</tbody></table>
+</div>
+<p>TODO: continue this list</p>
+<h3 id="non-functionnal-requirements"><a class="header" href="#non-functionnal-requirements">Non functionnal requirements</a></h3>
+<ol>
+<li>It should be easy to create new exos and maintain them, converting an existing C++ exo should take less than 2 minutes.</li>
+<li>The watcher should be performant: it should only watch files that could be modified by the student or teacher, it should take less than 100ms to see detect a change.</li>
+<li>PLX should be usable during exo creation too to make sure the checks are passing on</li>
+<li>Once an exo is opened, with one IDE window at right and the terminal with PLX at left, the students should not need to open or move other windows and should be able to only <code>Alt+Tab</code>. All the automable steps should be automated to focus on learning tasks (including build, build configuration, running, output diffing, manual entries in terminal, detecting when to run, showing solution, switching to next exo).</li>
+<li>Switching to next exo should take less than 10 seconds. After this time: the IDE should be opened with the new file, and PLX should show the new exo details.</li>
+<li>Trivial exo files shoud not need any build configuration, PLX should be able to guess how to build the target with available files.</li>
+<li>Cross-plateform comptability meaning that PLX should work on all linux, windows and MAC machines.</li>
+<li>PLX shoud be designed in a modular way that allows for any easy addition of the features.</li>
+<li>Compiling an exercice should take less than (10 seconds).</li>
+<li>When saving a file, the compilation starts. If a compilation is already running when saving a file, it should kill the actual compilation and launch a new compilation.</li>
+<li>When launching the tests, if tests are already running they should be stopped and relaunched again.</li>
+<li>PLX must have a file watcher and file parser to be able to watch the edited file(s) and return it states. This is necessary to be able to flag the exercice (in progress, done, not started) and return errors descriptions or status (passed / failed) of the exercice.</li>
+</ol>
+<h2 id="for-later"><a class="header" href="#for-later">For later</a></h2>
+<p>PDG is only 3 weeks but we already had some improvements or ideas for future development</p>
+<div class="table-wrapper"><table><thead><tr><th>Feature</th><th>Status</th><th>Description</th></tr></thead><tbody>
+<tr><td>Review mode</td><td>TODO</td><td>A big feature to help clone all forks, pull them regularly, run all tests, review specific exos, flag some answers.</td></tr>
+<tr><td>A global progress grid</td><td>TODO</td><td>To easily view general progress in colors</td></tr>
+<tr><td>"Lab/Single exo" mode</td><td>TODO</td><td>Just run a single exo definition without all the general project definition and lists around.</td></tr>
+<tr><td>Concurrent execution of checks</td><td>TODO</td><td>If a CLI has 10 checks and it takes 2 seconds to execute, running all tests one after the other will take 20 seconds ! If we could run them in 2.1 seconds that would be much better !!</td></tr>
+<tr><td>Smart execution of tests</td><td>TODO</td><td>Execute first failed displayed check first, then continue with next failing tests, and finally with already passing tests. Invent other strategies to run them more efficiently.</td></tr>
+<tr><td>Add a <code>run</code> command to PLX</td><td>TODO</td><td>Enable running an exo binary without digging into <code>build</code> folder. This could be useful for labs and PCO exos when we want to run the binary exo ourself to choose arguments or pipe into <code>grep</code>, without typing <code>../../build/mutex/mut1/exo</code></td></tr>
+<tr><td>Import course and skills files from DY equivalent</td><td>TODO</td><td>Course that use Delibay + PLX might want to easily setup those files.</td></tr>
+<tr><td></td><td>TODO</td><td></td></tr>
+<tr><td></td><td>TODO</td><td></td></tr>
+<tr><td></td><td>TODO</td><td></td></tr>
+</tbody></table>
+</div>
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="pipeline-ci-cd.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <a rel="next" href="teachers.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="pipeline-ci-cd.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next" href="teachers.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="elasticlunr.min.js"></script>
+        <script src="mark.min.js"></script>
+        <script src="searcher.js"></script>
+
+        <script src="clipboard.min.js"></script>
+        <script src="highlight.js"></script>
+        <script src="book.js"></script>
+
+        <!-- Custom JS scripts -->
+
+
+    </div>
+    </body>
+</html>
