@@ -70,9 +70,8 @@ layout: center
 
 ### Challenges
 
-- Time (support java) 
 - Learn Rust as you go
-- Cross platform problems
+- Cross platform problems   
 
 ---
 
