@@ -4,8 +4,8 @@
 
 1. Install the Rust toolchain via `rustup` on [rustup.rs](https://rustup.rs/), so you have the package manager cargo and the necessary tools to compile plx from the `crates.io` package.
 
-If you are programming in
-1. C or C++: standard build tools for C/C++, used by Xmake
+1. C or C++: standard build tools for C/C++, (gcc and g++)
+
 1. Configure `$EDITOR` environment variable to define your IDE. This way PLX can auto start your IDE
     1. Currently, we only support `code`, `codium`, `idea`. 
         1. For now this feature is unstable for terminal based editors. Feel free to create a new issue if you do not see your favorite IDE here.
