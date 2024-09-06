@@ -29,12 +29,21 @@ TODO: Testing ?
 
 ### Parser
 TODO: Testing ?
+
+The Parser collectively provide functionality for serializing and deserializing data to and from toml's files format. TIt convert TOML strings into Rust data structures and vice versa using the serde library. These functions handle the conversion by leveraging serde's DeserializeOwned and Serialize traits, ensuring that any compatible Rust type can be easily transformed to and from TOML format. This allows for efficient data interchange and configuration management in applications that use TOML for configuration files.
+
+
 ### Compiler
 TODO: Testing ?
+
+
 ### Runner
 TODO: Testing ?
+
 ### Watcher
 TODO: Testing ?
+
+The FileWatcher is designed to monitor a specified directory for file modifications. It runs in a separate thread and uses channels to communicate events back to the main thread. The provided tests, verify its functionality by checking if the watcher correctly detects changes in both nested folders and the root of the watched directory. When a file is modified, the watcher sends an event through the channel, which the test then asserts to ensure the correct event (Event::FileSaved) is received.
 
 ## Encountered issues
 1. Colors not visible in CI after using `console` crate: the test in CI run in a non interactive process (you can simulate this by running `cargo test > output`), so the colors were not applied so we couldn't compare it with expected "ANSI codes included output".

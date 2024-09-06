@@ -2,23 +2,16 @@
 layout: center
 ---
 
-# PLX
-<!--![home.png](./img/home.png)-->
+<center>
 
----
+![logo](./static/logo.svg)
 
-### WHY ?
+<br>
+<br>
 
-![classic-xp](./img/svg/classic-xp.svg)
+## Practice programming exos in delightful Learning eXperience
 
----
-
-### Technologies
-
-1. Rust
-1. xmake
-1. notify-rs
-1. TODO
+</center>
 
 ---
 
@@ -33,6 +26,28 @@ layout: center
 ![architecture](./workflow.png)
 
 ---
+
+### Technologies
+
+
+- Rust
+- Notify
+- Similar
+- Syntect
+- Ratatui
+- Serde + Toml
+
+<div class="grid grid-cols-2 gap-4">
+  <div>
+<img src="/img/png/syntax_highlight.png" width="600" height="300">
+  </div>
+  <div>
+<img src="/img/png/ratatui.png" width="400" height="300">
+  </div>
+</div>
+
+---
+
 ### CI - Contributing
 
 ![architecture](./contributing-workflow.png)
@@ -44,31 +59,40 @@ layout: center
 ![architecture](./release-workflow.png)
 
 ---
+
+### Work convention
+
+- Versioning: Semantic Versionning (semver) 
+- Changelog: Keep a Changelog 
+- Commits: Conventionnal commits
+
+<img src="./img/png/commits.png" width="600" height="300">
+
+---
+
+### File Architecture
+
+
+<img src="./img/svg/structure-exos.png" width="600" height="300">
+
+
+---
+
 ### Challenges
-<v-clicks>
 
+- Learn Rust as you go
+- Cross platform problems   
 
-</v-clicks>
+### Future features
 
-
----
-
-### Tests
-
-<!--![debug-terminal.png](./imgs/debug-terminal.png)-->
-
----
-
-
-### Fun moments
-<v-clicks>
-
-
-</v-clicks>
+- Show errors in the UI
+- UI
+- Support Java, cmake, xmake...
+- Teachers review mode
 
 ---
 layout: center
 ---
 
-### Demo time !
-TODO
+## Questions ?
+
