@@ -63,7 +63,7 @@ layout: center
 
 ### File Architecture
 
-![image](https://github.com/user-attachments/assets/a84942e4-618f-47ef-8242-7969a01f5f0d)
+![image](https://github.com/user-attachments/assets/756fad4d-f41d-4406-8647-15450cf9df97)
 
 ---
 
