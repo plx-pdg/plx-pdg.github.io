@@ -1,4 +1,5 @@
 # Landing page
 
 ![landing page](/img/png/landing_page.png)
-Access there : https://plx.rs
+
+You can find this project's landing page [here](https://plx.rs)
