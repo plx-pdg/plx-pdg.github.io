@@ -62,9 +62,11 @@ layout: center
 
 ### Work convention
 
-- Versioning: semver 
+- Versioning: Semantic Versionning (semver) 
 - Changelog: Keep a Changelog 
-- Commits: Conventionnals commits
+- Commits: Conventionnal commits
+
+<img src="./img/png/commits.png" width="600" height="300">
 
 ---
 
@@ -81,13 +83,16 @@ layout: center
 - Learn Rust as you go
 - Cross platform problems   
 
-### Futur features
+### Future features
 
-- Error user interfaces
+- Show errors in the UI
 - UI
-- java, cmake, xmake support
-- teachers review
+- Support Java, cmake, xmake...
+- Teachers review mode
 
 ---
+layout: center
+---
 
+## Questions ?
 
