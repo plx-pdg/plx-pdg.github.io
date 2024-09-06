@@ -83,6 +83,4 @@ layout: center
 
 ---
 
-### Landing Page
 
-![landing_page_home](/img/png/landing_page.png)
