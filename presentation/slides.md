@@ -73,6 +73,13 @@ layout: center
 - Learn Rust as you go
 - Cross platform problems   
 
+### Futur features
+
+- Error user interfaces
+- UI
+- java, cmake, xmake support
+- teachers review
+
 ---
 
 
