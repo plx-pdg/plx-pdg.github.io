@@ -1,4 +1,10 @@
-# Features
+# Introduction
+
+PLX is a project developed to enhance the learning of programming languages, with a focus on a smooth and optimized learning experience. The goal of this project is to reduce the usual friction involved in completing coding exercises (such as manual compilation, running, testing, and result verification) by automating these steps.
+
+PLX offers a terminal user interface (TUI) developed in Rust and supports multiple languages (currently C and C++). It enables automatic compilation as soon as a file is saved, automated checks to compare program outputs, and instant display of errors and output differences. The solution code can also be displayed. The project draws inspiration from [Rustlings](https://rustlings.cool/) and aims to create a more efficient learning experience, particularly for programming courses at HEIG-VD.
+
+## Features
 
 We described a lot of details about the a better experience, problems of the current experience, but here is **a complete central list of features we need to develop** during PDG and some other ideas for later. Some of them will have a dedicated issue on GitHub, but this is easier to see the global picture and progress here.
 ### Functionnal requirements
