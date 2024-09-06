@@ -32,10 +32,10 @@ layout: center
 
 - Rust
 - Notify
+- Similar
+- Syntect
 - Ratatui
 - Serde + Toml
-- Syntect
-- Similar
 
 <div class="grid grid-cols-2 gap-4">
   <div>
