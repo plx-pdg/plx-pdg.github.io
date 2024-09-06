@@ -27,15 +27,21 @@ layout: center
 
 ### Technologies
 
-<v-clicks>
-- Rust 
-- notify
-- ratatui
-- serde + toml
-- syntect
-</v-clicks>
+- Rust
+- Notify
+- Ratatui
+- Serde + Toml
+- Syntect
 
-![syntax highlighting library](/img/png/syntax_highlight.png)
+
+<img src="/img/png/syntax_highlight.png" width="600" height="300">
+
+<img src="/img/png/ratatui.png" width="100" height="300">
+
+<img src="/img/svg/rust.opti.svg" width="100" height="300">
+
+
+
 
 ---
 
