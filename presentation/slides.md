@@ -7,12 +7,6 @@ layout: center
 
 ---
 
-### WHY ?
-
-- 
-
----
-
 ### Architecture
 
 ![architecture](./app-systems.png)
