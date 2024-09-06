@@ -1,7 +1,5 @@
 # Why ?
 
-**TODO: translate this to English ?** 
-
 > *The age of features is over, we are living in the age of experiences.*  
 > Aral Balkan, [during a UX conference titled "Superheroes & Villains in Design"](https://small-tech.org/videos/ux-talk/).
 
