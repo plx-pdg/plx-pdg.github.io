@@ -6,7 +6,7 @@
 - [PDG-Report](./report.md)
 	- [Project-description](./project-description.md)
 	- [Architecture](./architecture.md)
-	- [Mockups](./mockups.md)
+	- [Mockups](./mokups.md)
 	- [Landing page](./landing-page.md)
 	- [Technical choice](./technical-choice.md)
 	- [Work process](./work-process.md)

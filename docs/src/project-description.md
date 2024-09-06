@@ -1,4 +1,5 @@
 # Features
+
 We described a lot of details about the a better experience, problems of the current experience, but here is **a complete central list of features we need to develop** during PDG and some other ideas for later. Some of them will have a dedicated issue on GitHub, but this is easier to see the global picture and progress here.
 ### Functionnal requirements
 | Feature                                                                              | Status | Description                                                                                                             |
@@ -23,6 +24,7 @@ We described a lot of details about the a better experience, problems of the cur
 <!--TODO: continue this list-->
 
 ### Non functionnal requirements
+
 1. It should be easy to create new exos and maintain them, converting an existing C++ exo should take less than 2 minutes.
 1. The watcher should be performant: it should only watch files that could be modified by the student or teacher, it should take less than 100ms to see detect a change.
 1. PLX should be usable during exo creation too to make sure the checks are passing on

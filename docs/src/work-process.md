@@ -1,3 +1,4 @@
+# Work process
 ### Communication
 1. We have a Telegram group to have group calls, discuss and ask for reviews
 1. We do 2 small coordination meetings starting between 9:30 and 10:00, and another one around 15:00.

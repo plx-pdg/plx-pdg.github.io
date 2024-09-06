@@ -1,4 +1,5 @@
-## Mockups
+# Mockups
+
 ## Case study with the classic experience
 Let's consider a typical coding exercise that David needs to resolve:  
 
