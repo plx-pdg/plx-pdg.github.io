@@ -5,9 +5,9 @@
 
 ## Running architecture
 
-![archi](../../presentation/app-systems.png)
+![app system](img/png/app-systems.png)
 
-![archi](../../presentation/workflow.png)
+![workflow](img/png/workflow.png)
 ## File architecture
 
 ```sh

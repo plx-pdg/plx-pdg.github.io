@@ -18,7 +18,7 @@ todo: document other OS-->
   1. Github is configured to block merging if CI jobs are failing.
   1. We try to delete the branch when PR is merged.
 
-![workflow](img/png/contributing-workflow.png)
+![contributing](img/png/contributing-workflow.png)
 ### Release strategy
 
 To release a new version of PLX, here are the manual steps:
