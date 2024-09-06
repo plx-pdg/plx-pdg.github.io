@@ -9,7 +9,7 @@ layout: center
 
 ### WHY ?
 
-![classic-xp](./img/svg/classic-xp.opti.svg)
+- 
 
 ---
 
@@ -27,21 +27,22 @@ layout: center
 
 ### Technologies
 
+
 - Rust
 - Notify
 - Ratatui
 - Serde + Toml
 - Syntect
+- Similar
 
-
+<div class="grid grid-cols-2 gap-4">
+  <div>
 <img src="/img/png/syntax_highlight.png" width="600" height="300">
-
-<img src="/img/png/ratatui.png" width="100" height="300">
-
-<img src="/img/svg/rust.opti.svg" width="100" height="300">
-
-
-
+  </div>
+  <div>
+<img src="/img/png/ratatui.png" width="400" height="300">
+  </div>
+</div>
 
 ---
 
@@ -59,27 +60,26 @@ layout: center
 
 ### Work convention
 
-<v-clicks>
 - Versioning: semver 
 - Changelog: Keep a Changelog 
 - Commits: Conventionnals commits
-</v-clicks>
 
 ---
 
 ### File Architecture
 
-![image](https://github.com/user-attachments/assets/756fad4d-f41d-4406-8647-15450cf9df97)
+
+<img src="./img/svg/structure-exos.png" width="600" height="300">
+
 
 ---
 
 ### Challenges
 
-<v-clicks>
+
 - Time (support java) 
 - Learn Rust as you go
 - Windows on CI
-</v-clicks>
 
 ---
 
