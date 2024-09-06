@@ -2,8 +2,16 @@
 layout: center
 ---
 
-# PLX
-<!--![home.png](./img/home.png)-->
+<center>
+
+![logo](./static/logo.svg)
+
+<br>
+<br>
+
+## Practice programming exos in delightful Learning eXperience
+
+</center>
 
 ---
 
