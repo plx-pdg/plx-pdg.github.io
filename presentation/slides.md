@@ -27,15 +27,21 @@ layout: center
 
 ### Technologies
 
-<v-clicks>
-- Rust 
-- notify
-- ratatui
-- serde + toml
-- syntect
-</v-clicks>
+- Rust
+- Notify
+- Ratatui
+- Serde + Toml
+- Syntect
 
-![syntax highlighting library](./img/svg/syntax_highlight.png)
+
+<img src="/img/png/syntax_highlight.png" width="600" height="300">
+
+<img src="/img/png/ratatui.png" width="100" height="300">
+
+<img src="/img/svg/rust.opti.svg" width="100" height="300">
+
+
+
 
 ---
 
@@ -63,7 +69,7 @@ layout: center
 
 ### File Architecture
 
-![image](https://github.com/user-attachments/assets/a84942e4-618f-47ef-8242-7969a01f5f0d)
+![image](https://github.com/user-attachments/assets/756fad4d-f41d-4406-8647-15450cf9df97)
 
 ---
 
@@ -79,4 +85,4 @@ layout: center
 
 ### Landing Page
 
-![landing_page_home](./img/svg/landing_page.png)
+![landing_page_home](/img/png/landing_page.png)
