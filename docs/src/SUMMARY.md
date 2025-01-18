@@ -1,6 +1,7 @@
 # Summary
 
 - [Installation](./install.md)
+- [Project status](./status.md)
 - [Why?](./why.md)
 - [Changelog](./CHANGELOG.md)
 - [PDG-Report](./report.md)
