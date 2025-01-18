@@ -16,9 +16,13 @@ Showing compilation errors with a few manipulations of the output (absolute path
 
 Simple output checks to verify basic cases and 2 error cases, with a trivial C program. This is a simple display of an important feature: smart diffing, the possibility to highlight specific words that are changed on a given line and not just indicate red+green lines like Git does.
 ![1 check is not passing among 3 checks, there is a missing space between 2 words, the mix is highlighted to quickly identify what is different](./img/png/demo-checks.png)
+Once the exo is done (all checks are passing), the solution can be viewed directly in PLX.
+![showing the solution code with basic but nice code highlighting](./img/png/demo-solution.png)
+
+**This is only a very first working version of PLX, a lot more has to come. It's very cool to see that only 3 weeks is enough to start feeling this new experience 🔥🔥🔥!** 
 
 ## Bachelor work
-Samuel Roland is going to work on the following big features during ~450 hours during the last semester at HEIG-VD for his bachelor work. This is an amazing opportunity to continue the project with dedicated time !
+Samuel Roland is going to work on the following big features during ~450 hours during the last semester at HEIG-VD for his bachelor work (February to July 2025). This is an amazing opportunity to continue the project with dedicated time !
 
 1. Supporting the [DY syntax](https://delibay.org/docs/use/dy-syntax) (invented for Delibay) in PLX to have a common light and human readable+writable (a.k.a delightful) syntax to define and maintain exos
 1. Allowing teachers to see the code and results of students during a live sessions in class, the code is sent to a central server and sent back to the teacher's PLX so there is an opportunity to see the progress, to give global feedback, create interactions around the various approaches...
