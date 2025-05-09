@@ -22,25 +22,18 @@ Once the exo is done (all checks are passing), the solution can be viewed direct
 **This is only a very first working version of PLX, a lot more has to come. It's very cool to see that only 3 weeks is enough to start feeling this new experience 🔥🔥🔥!** 
 
 ## Bachelor work
-Samuel Roland is going to work on the following big features during ~450 hours during the last semester at HEIG-VD for his bachelor work (February to July 2025). This is an amazing opportunity to continue the project with dedicated time !
+Samuel is going to work on the following big features during ~450 hours during the last semester at HEIG-VD for his bachelor work (February to July 2025). This is an amazing opportunity to continue the project with dedicated time !
 
-1. Supporting the [DY syntax](https://delibay.org/docs/use/dy-syntax) (invented for Delibay) in PLX to have a common light and human readable+writable (a.k.a delightful) syntax to define and maintain exos
+1. Supporting the [DY syntax](https://delibay.org/docs/use/dy-syntax) (invented for Delibay) in PLX to have a common light and delighftul human readable and writable syntax to define and maintain exos
 1. Allowing teachers to see the code and results of students during a live sessions in class, the code is sent to a central server and sent back to the teacher's PLX so there is an opportunity to see the progress, to give global feedback, create interactions around the various approaches...
 
+**If you want to see the progress on this work, you can read more in this Git repository: [tb-docs](https://github.com/samuelroland/tb-docs/)**
+
+## MVP course
+Samuel is currently participating to the MVP course at HEIG-VD, to explore the challenges of IT and programming teachers to see how to help them.
+
 ## Crunch startupper challenge
-Samuel is going to participate to the Crunch startupper challenge, the team is still in research. This will allow the project to search and define a potential business model to see if it could be financially sustainable in the long run.
-
-Here the 2 main ideas of business model, around PLX
-1. Annual subscriptions for instituations (schools, universities, ...) including
-    1. Integrating PLX into existing courses
-    1. Coaching teachers to have a deliberate approach to teaching instead of the lecture based approach
-    1. Creating exos or transcribe existing ones to PLX formats
-    1. Supporting new programming languages or exos types
-1. Montly subscriptions for passionnated people
-    1. Trainings based on PLX (mix of classic content like video, demos, audio and a lot of exos in PLX directly)
-    1. Personal coaching with these people for personal projects they might have, to give the human feedback and continue to improve course content to match the needs.
-
-These ideas are not mature and must be tested/validated with user interviews and other researches... This is why **I'm searching for 2 persons at HEIG-VD doing the Crunch this year to join my team: ideally one person in HEG and another in COMEM :)** If you are interested, please contact me !
+Samuel has participated with a team of 4 to the Crunch startupper challenge in from 2025-03-17 to 2025-03-21.
 
 ## History
 1. First development during PDG (Projet De Groupe) during 3 weeks with a team of 4 IT students. TODO: more details.
