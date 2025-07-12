@@ -10,9 +10,9 @@
 </center>
 
 ## Why
-> The classic way of doing programming exercises is full of friction that slows down the progress, and creates distraction from learning. PLX is here to redefine the experience, based on deliberate practice principles, because IT students really deserve it.
+> The classic way of doing programming exercises is full of friction that slows down the progress, and creates distraction from learning. PLX is here to redefine the learning and teaching experience, based on the science of deliberate practice.
 
-#### Practice programming exos in delightful Learning eXperience
+#### Practice programming exos in deliberate Learning eXperience
 
 Whether you are learning `C`, `C++` or `Java`, PLX can bring you
 1. 🔁 **A feedback loop as short as possible**  
