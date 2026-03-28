@@ -64,4 +64,9 @@ We have designed a ...
 [Git repository of this website](https://github.com/plx-pdg/plx-pdg.github.io) -
 [Development documentation](/book/dev.html)
 
+<div class="oranda-hide"><!-- To avoid inclusion in the landing page... -->
 
+### License
+The PLX website is released under the [MIT license](LICENSE).
+
+</div>
